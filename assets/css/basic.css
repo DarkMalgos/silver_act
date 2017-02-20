@@ -236,6 +236,24 @@ header nav>ul>li:last-child>a:after {
     transition: all ease 1s;
 }
 
+#send {
+    height: 100%;
+    margin-left: 40px;
+    width: 400px;
+    background-color:#f7ca18;
+    display: none;
+    font-size: 30px;
+    font-family: 'Futura-Med';
+    color: white;
+    text-align: center;
+}
+
+#send p, #send img{
+    display: inline-block;
+}
+
+
+
 /* how it work */
 
 #how-it-work {

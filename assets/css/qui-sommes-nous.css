@@ -236,6 +236,80 @@ header nav>ul>li:last-child>a:after {
     transition: all ease 1s;
 }
 
+#sticky input[type=tel]:focus {
+    right: 0px;
+    transition: all ease 1s;
+}
+
+/* qui sommes-nous */
+
+#who-is-it {
+    width: 100%;
+    height: 1696px;
+    background: white;
+    text-align: center;
+}
+
+#who-is-it h2 {
+    width: 100%;
+    background: red;
+    color: white;
+    font-family: 'Lato';
+    font-size: 35px;
+    padding-top: 17px;
+    padding-bottom: 13px;
+}
+
+#who-is-it video {
+    width: 100%;
+    height: 634px;
+    background: blue;
+}
+
+#who-is-it p {
+    clear: both;
+    width: 407px;
+    background: red;
+    color: white;
+    font-family: 'Futura-Med';
+    font-size: 20px;
+    text-align: left;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 24px 86px 25px 85px;
+    border-radius: 30px;
+}
+
+#creator-block {
+    height: 808px;
+    font-size: 0;
+    display: inline-block;
+}
+
+#left-creator {
+    width: 50%;
+    height: 743px;
+    float: left;
+    background: pink;
+    padding-top: 65px;
+    text-align: center;
+}
+
+#left-creator p {
+    margin-top: 53px;
+    margin-right: 63px;
+    padding: 22px 21px 28px 21px;
+    background: #99cccc;
+}
+
+#right-creator {
+    width: 50%;
+    height: 743px;
+    float: left;
+    background: green;
+    padding-top: 65px;
+}
+
 /**footer**/
 
 footer {
