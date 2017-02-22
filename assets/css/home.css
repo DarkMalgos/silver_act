@@ -1,0 +1,147 @@
+/* Header */
+
+header nav>ul>li:first-child>a:after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    opacity: 0.5;
+    transition: all ease 1s;
+}
+
+/* how it work */
+
+#how-it-work {
+    width: 100%;
+    height: 800px;
+    background-color: #66cccc;
+    text-align: center;
+}
+
+#green-block {
+    height: 800px;
+    display: inline-block;
+    text-align: left;
+    font-size: 0;
+    overflow: hidden;
+}
+
+#green-block img {
+    margin-top: 40px;
+    margin-left: 40px;
+    width: 480px;
+    height: 710px;
+    display: inline-block;
+    float: left;
+}
+
+#green-right {
+    width: 43%;
+    display: inline-block;
+    float: left;
+    color: white;
+    margin-top: 115px;
+    margin-left: 40px;
+}
+
+#green-right h3 {
+    font-family: 'Futura-Med';
+    font-size: 35px;
+    padding-bottom: 114px;
+}
+
+#green-right p {
+    font-family: 'Lato';
+    font-size: 20px;
+    padding-bottom: 29px;
+}
+
+#green-button {
+    font-family: 'Lato';
+    color: white;
+    font-size: 20px;
+    padding-bottom: 29px;
+    margin-top: 119px;
+    padding-top: 29px;
+    border: white solid 2px;
+    border-radius: 30px;
+    text-align: center;
+    transition: all ease 1s;
+}
+
+#green-button:hover {
+    color: #66cccc;
+    background: white;
+    transition: all ease 1s;
+}
+
+/* our activitis */
+
+#our-activitis {
+    width: 100%;
+    height: 800px;
+    background: #ff6666;
+    text-align: center;
+}
+
+#pink-block {
+    height: 800px;
+    display: inline-block;
+    text-align: center;
+    font-size: 0;
+    overflow: hidden;
+}
+
+#pink-block img {
+    margin-top: 40px;
+    margin-right: 40px;
+    float: left;
+}
+
+#pink-left {
+    width: 43%;
+    display: inline-block;
+    float: left;
+    color: white;
+    margin: 40px 40px 0 23px;
+}
+
+#pink-left h3 {
+    font-family: 'Futura-Med';
+    font-size: 35px;
+    padding-bottom: 81px;
+}
+
+#pink-left ul {
+    list-style: none;
+    font-size: 20px;
+    text-align: left;
+}
+#pink-left ul li {
+    margin-bottom: 80px;
+}
+
+#pink-left ul li img {
+    margin-top: 0;
+    margin-right: 22px;
+    text-align: left;
+}
+
+#pink-button {
+    font-family: 'Lato';
+    font-size: 20px;
+    color: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border: white solid 2px;
+    border-radius: 30px;
+    transition: all ease 1s;
+}
+
+#pink-button:hover {
+    color: #ff6666;;
+    background: white;
+    transition: all ease 1s;
+}
