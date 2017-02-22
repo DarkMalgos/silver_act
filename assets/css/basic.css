@@ -231,6 +231,13 @@ header nav>ul>li:last-child>a:after {
     transition: all ease 1s;
 }
 
+
+/* first swip */
+
+#swiper{
+    height: 780px;
+    
+}
 /* how it work */
 
 #how-it-work {
@@ -431,9 +438,12 @@ header nav>ul>li:last-child>a:after {
 }
 
 #all-comments{
-    display: inline-flex;
-    padding-left: 150px;
-    padding-top: 120px;
+    
+    padding-left: 155px;
+    padding-top: 90px;
+    display: flex;
+
+    
 }
 
 #all-comments h4{
@@ -452,18 +462,30 @@ header nav>ul>li:last-child>a:after {
 #first-comment{
     width: 250px;
     height: 150px;
-    padding-right: 150px;
+    padding-right: 125px;
+    
 }
 
 #second-comment{
     width: 250px;
     height: 150px;
-    padding-right: 150px;
+    padding-right: 125px;
+    
 }
 
 #third-comment{
     width: 250px;
     height: 150px;
+    padding-right: 125px;
+    
+}
+
+#align{
+    padding-left: 30px;
+}
+
+#all-comments li:nth-child(4n+0){
+    float: right;
 }
 
 

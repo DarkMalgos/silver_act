@@ -13,6 +13,40 @@
     <link rel="stylesheet" type="text/css" href="css/mobstyle.css" media="screen and (max-width:650px)">
 -->
     <link rel="icon" type="image/png" href="assets/img/favicon32.png">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/swiper.mini.css">
+     <style>
+    
+    .swiper-container {
+       
+        height: 100%;
+    }
+    .swiper-slide {
+        
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+         
+    .swiper-contain {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slider {
+        background-position: center;
+        background-size: cover;
+    }
+    </style>
 </head>
 
 <body>
@@ -46,7 +80,8 @@
     </header>
     
     <main>
-        <section id="">
+        <section>
+     
             <!-- romel partie -->
         </section>
         
@@ -102,28 +137,36 @@
         </section>
 
         <section id="comments">
-            
-            <div id="all-comments">
-                <div id="first-comment">
+           <div id="all-comments" >
+                        
+               <div id="first-comment">
                     <ul>
                         <li><h4>Emilie</h4></li>
-                        <li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p></li>
+                        <li><img src="assets/img/quote-01.png"> </li>
+                        <li id="align"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p></li>
+                        <li><img src="assets/img/quote-02.png"> </li>
                     </ul>
                 </div>
                 <div id="second-comment">
                     <ul>
                         <li><h4>Sarah</h4></li>
-                        <li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p></li>
+                        <li><img src="assets/img/quote-01.png"> </li>
+                        <li id="align"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p></li>
+                        <li><img src="assets/img/quote-02.png"> </li>
                     </ul>
-                </div>
+                </div>           
                 <div id="third-comment">
                     <ul>
                         <li><h4>Jean</h4></li>
-                        <li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p></li>
+                        <li><img src="assets/img/quote-01.png"> </li>
+                        <li id="align"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p></li>
+                        <li><img src="assets/img/quote-02.png"> </li>
                     </ul>
-                </div>
-                
+                </div>             
+                        
             </div>
+            
+            
             
             
         </section>
@@ -167,6 +210,32 @@
     
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="assets/js/basic.js"></script>
+    
+    <!-- Swiper JS 1 -->
+    <script src="assets/js/swiper.mini.js"></script>    
+    
+    <!-- Swiper JS 2 -->
+    <script src="assets/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        slidesPerView: 3,
+        paginationClickable: true,
+        spaceBetween: 10
+    });
+    </script>
+    <script>
+    var swiper = new Swiper('.swiper-contain', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 30,
+        effect: 'fade'
+    });
+    </script>
     
 </body>
 
