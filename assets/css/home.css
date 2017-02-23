@@ -54,23 +54,24 @@ header nav>ul>li:first-child>a:after {
 
 #green-right h3 {
     font-family: 'Futura-Med';
-    font-size: 35px;
+    font-size: 30px;
     padding-bottom: 114px;
 }
 
 #green-right p {
     font-family: 'Lato';
-    font-size: 20px;
+    font-size: 15px;
     padding-bottom: 29px;
 }
 
 #green-button {
+    width: 290px;
     font-family: 'Lato';
     color: white;
     font-size: 20px;
-    padding-bottom: 29px;
+    padding-bottom: 15px;
     margin-top: 119px;
-    padding-top: 29px;
+    padding-top: 15px;
     border: white solid 2px;
     border-radius: 30px;
     text-align: center;
@@ -116,19 +117,18 @@ header nav>ul>li:first-child>a:after {
 
 #pink-left h3 {
     font-family: 'Futura-Med';
-    font-size: 35px;
+    font-size: 30px;
     padding-bottom: 81px;
 }
 
 #pink-left ul {
     list-style: none;
-    font-size: 20px;
+    font-size: 15px;
     text-align: left;
 }
 #pink-left ul li {
     margin-bottom: 80px;
     font-family: 'Lato';
-    font-size: 20px;
 }
 
 #pink-left ul li img {
@@ -138,11 +138,12 @@ header nav>ul>li:first-child>a:after {
 }
 
 #pink-button {
+    width: 290px;
     font-family: 'Lato';
     font-size: 20px;
     color: white;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     border: white solid 2px;
     border-radius: 30px;
     transition: all ease 1s;
@@ -165,7 +166,7 @@ header nav>ul>li:first-child>a:after {
 
 #our-profit h3 {
    font-family: 'Futura-Med';
-   font-size: 35px;
+   font-size: 30px;
    padding-top: 60px;
    font-weight: bolder;
 }
@@ -212,10 +213,11 @@ header nav>ul>li:first-child>a:after {
    margin-left: 80px;
 }
 
-#profits ul li{
-   padding-top: 30px;
-   padding-left: 50px;
-   width: 182px;
+#profits ul li {
+    padding-top: 30px;
+    padding-left: 50px;
+    width: 182px;
+    font-size: 15px;
 }
 
 /** Comments **/
@@ -245,7 +247,7 @@ header nav>ul>li:first-child>a:after {
 #all-comments p{
    text-align: justify;
    font-family: 'Futura-Med';
-   font-size: 14px;
+   font-size: 15px;
 }
 
 #first-comment{
