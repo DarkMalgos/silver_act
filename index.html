@@ -6,6 +6,7 @@
     <title>Silver Act' - Bien Vieillir</title>
     <meta name="description" content="Silver Act'">
     <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/swiper.mini.css">
     <link rel="stylesheet" href="assets/css/basic.css">
     <link rel="stylesheet" href="assets/css/home.css">
     <!--
@@ -61,8 +62,18 @@
     </header>
     
     <main>
-        <section id="">
-            <!-- romel partie -->
+        <section class = "swiper-container">
+            <div class="swiper-wrapper">
+                <img alt="senior" src="assets/img/Senior.jpg" class="swiper-slide">
+                <img alt="Sport" src="assets/img/sport.jpg" class="swiper-slide">
+                <img alt="elder" src="assets/img/elder.jpg" class="swiper-slide"> 
+            </div>
+            
+        <!-- Ajouter Pagination -->
+            <div class="swiper-pagination swiper-pagination-white"></div>
+            <!-- Ajouter Arrows -->
+            <div class="swiper-button-next swiper-button-white"></div>
+            <div class="swiper-button-prev swiper-button-white"></div>   
         </section>
         
         <section id="how-it-work">
@@ -210,8 +221,10 @@
     
     
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script src="assets/js/basic.js"></script>
     
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/basic.js"></script>
 </body>
 
 </html>

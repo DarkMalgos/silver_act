@@ -11,6 +11,12 @@ header nav>ul>li:first-child>a:after {
     transition: all ease 1s;
 }
 
+/* swiper */
+
+.swiper-container {
+    width: 100%;
+}
+
 /* how it work */
 
 #how-it-work {

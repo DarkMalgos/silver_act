@@ -1,6 +1,6 @@
 /* Header */
 
-header nav>ul>li:nth-child(3)>a:after {
+header nav>ul>li:last-child>a:after {
     content: '';
     width: 100%;
     height: 3px;
