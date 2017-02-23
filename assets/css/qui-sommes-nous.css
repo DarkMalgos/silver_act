@@ -10,61 +10,105 @@ header nav>ul>li:nth-child(2)>a:after {
     opacity: 0.5;
     transition: all ease 1s;
 }
+
 /* qui sommes-nous */
 
-#who-is-it {
+#who-we-are {
     width: 100%;
-    height: 1696px;
     background: white;
     text-align: center;
 }
 
-#who-is-it video {
-    width: 100%;
-    height: 634px;
-    background: url(../img/who%2520we%2520are/video-filler.jpg);
-}
-
-#who-is-it p {
-    clear: both;
-    width: 407px;
-    background: red;
-    color: white;
+#who-we-are h2 {
     font-family: 'Futura-Med';
-    font-size: 20px;
-    text-align: left;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    padding: 24px 86px 25px 85px;
-    border-radius: 30px;
+    font-size: 40px;
+    color: white;
+    background-color: red;
 }
 
-#creator-block {
-    height: 808px;
-    font-size: 0;
+#who-we-are img {
+    width: 100%;
+}
+
+#creator {
+    text-align: center;
+    overflow: hidden;
+}
+
+#julie {
+    float: left;
+    width: 50%;
+    padding-top: 81px;
+}
+
+#julie img {
+    width: 278px;
+    height: 278px;
+    border: solid 10px #4ecdc4;
+    border-radius: 50%;
+}
+
+#julie p {
+    font-family: 'Lobster';
+    font-size: 40px;
+    width: 16%;
+    margin: 33px 166px 0 222px;
+}
+
+#julie span {
+    font-size: 30px;
+}
+
+#julie-quote-text {
+    margin-top: 35px;
     display: inline-block;
 }
 
-#left-creator {
-    width: 50%;
-    height: 743px;
-    float: left;
-    background: pink;
-    padding-top: 65px;
-    text-align: center;
+#julie-quote-text img{
+    width: 30px;
+    height: 21px;
+    border-radius: 0;
+    border: 0px;
+    display: inline-block;
+    transform: rotateX(180deg);
 }
 
-#left-creator p {
-    margin-top: 53px;
-    margin-right: 63px;
-    padding: 22px 21px 28px 21px;
-    background: #99cccc;
+#julie-quote-text img:first-child {
+    margin-bottom: 150px;
 }
 
-#right-creator {
-    width: 50%;
-    height: 743px;
-    float: left;
-    background: green;
-    padding-top: 65px;
+#julie-quote-text p {
+    text-align: left;
+    font-size: 16px;
+    font-family: 'Lato';
+    width: 51%;
+    display: inline-block;
+    margin: 0 0;
 }
+
+#emmanuelle {
+    float: left;
+    width: 50%;
+    padding-top: 81px;
+}
+
+#emmanuelle img {
+    width: 278px;
+    height: 278px;
+    border: solid 10px #4ecdc4;
+    border-radius: 50%;
+}
+
+#emmanuelle p {
+    font-family: 'Lobster';
+    font-size: 40px;
+    width: 38%;
+    margin: 33px 166px 0 154px;
+}
+
+#emmanuelle span {
+    font-size: 30px;
+}
+
+
+

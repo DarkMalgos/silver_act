@@ -121,6 +121,8 @@ header nav>ul>li:first-child>a:after {
 }
 #pink-left ul li {
     margin-bottom: 80px;
+    font-family: 'Lato';
+    font-size: 20px;
 }
 
 #pink-left ul li img {
@@ -277,7 +279,7 @@ header nav>ul>li:first-child>a:after {
    padding-top: 40px;
 }
 
-#align{
+.align{
    padding-left: 30px;
 }
 

@@ -160,6 +160,7 @@ header nav>ul>li:last-child>a:after {
     display: flex;
     align-items: center;
     transition: all ease 1s;
+    z-index: 200;
 }
 
 #phone-ico {
