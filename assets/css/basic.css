@@ -11,7 +11,7 @@
 @font-face {
     font-family: 'Lato';
     src: url('../fonts/Lato-Bla.eot');
-    src: local('☺'), url('../fonts/Lato-Black.woff') format('woff'), url('../fonts/Lato-Bla.ttf') format('truetype'), url('../fonts/Lato-Bla.svg') format('svg');
+    src: local('☺'), url('../fonts/Lato-Bla.woff') format('woff'), url('../fonts/Lato-Bla.ttf') format('truetype'), url('../fonts/Lato-Bla.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -19,8 +19,8 @@
 
 @font-face {
     font-family: 'Lobster';
-    src: url('../fonts/Lobster1.4.eot');
-    src: local('☺'), url('../fonts/Lobster1.4.woff') format('woff'), url('../fonts/Lobster1.4.ttf') format('truetype'), url('../fonts/Lobster1.4.svg') format('svg');
+    src: url('../fonts/Lobster.eot');
+    src: local('☺'), url('../fonts/Lobster.woff') format('woff'), url('../fonts/Lobster.ttf') format('truetype'), url('../fonts/Lobster.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -44,6 +44,11 @@ body {
     width: 100%;
     height: auto;
     overflow-x: hidden;
+}
+
+main {
+    height: 3200px;
+    background-color:black;
 }
 
 .center-col {
@@ -92,11 +97,11 @@ header nav>ul>li{
     line-height: 60px;
     transition:all ease 1s;
 }
-/*header nav>ul>li:first-child{
+header nav>ul>li:first-child{
     background:url(../img/logo_silver_act_small_nav.png) center no-repeat;
     width:230px;
     display:none;
-}*/
+}
 header nav>ul>li>a{
     font-family: Futura-Med;
     font-size: 15px;
@@ -120,29 +125,32 @@ header nav>ul>li:hover>a:after {
     transition: all ease 1s;
 }
 
-header nav>ul>li:first-child>a:after {
+
+header nav>ul>li:nth-child(2)>a:after {
     background: #db0a5b;
 }
 
-header nav>ul>li:nth-child(2)>a:after {
+header nav>ul>li:nth-child(3)>a:after {
     background: #f64747;
 }
 
-header nav>ul>li:nth-child(3)>a:after {
+header nav>ul>li:nth-child(4)>a:after {
     background: #f7ca18;
 }
 
-header nav>ul>li:nth-child(4)>a:after {
+header nav>ul>li:nth-child(5)>a:after {
     background: #4ecdc4;
 }
 
-header nav>ul>li:nth-child(5)>a:after {
+header nav>ul>li:nth-child(6)>a:after {
     background: #a2ded0;
 }
 
 header nav>ul>li:last-child>a:after {
     background: #dbd7d8;
 }
+
+
 
 /** STICKY **/
 
@@ -244,6 +252,139 @@ header nav>ul>li:last-child>a:after {
     display: inline-block;
 }
 
+/* swipper */
+
+
+/* how it work */
+
+#how-it-work {
+    width: 100%;
+    height: 800px;
+    background-color: #66cccc;
+    text-align: center;
+}
+
+#green-block {
+    height: 800px;
+    display: inline-block;
+    text-align: left;
+    font-size: 0;
+    overflow: hidden;
+}
+
+#green-block img {
+    margin-top: 40px;
+    margin-left: 40px;
+    width: 480px;
+    height: 710px;
+    display: inline-block;
+    float: left;
+}
+
+#green-right {
+    width: 43%;
+    display: inline-block;
+    float: left;
+    color: white;
+    margin-top: 115px;
+    margin-left: 40px;
+}
+
+#green-right h2 {
+    font-family: 'Futura-Med';
+    font-size: 35px;
+    padding-bottom: 114px;
+}
+
+#green-right p {
+    font-family: 'Lato';
+    font-size: 20px;
+    padding-bottom: 29px;
+}
+
+#green-button {
+    font-family: 'Lato';
+    color: white;
+    font-size: 20px;
+    padding-bottom: 29px;
+    margin-top: 119px;
+    padding-top: 29px;
+    border: white solid 2px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+#green-button:hover {
+    color: #66cccc;
+    background: white;
+}
+
+/* our activitis */
+
+#our-activitis {
+    width: 100%;
+    height: 800px;
+    background: #ff6666;
+    text-align: center;
+}
+
+#pink-block {
+    height: 800px;
+    display: inline-block;
+    text-align: center;
+    font-size: 0;
+    overflow: hidden;
+}
+
+#pink-block img {
+    margin-top: 40px;
+    margin-right: 40px;
+    float: left;
+}
+
+#pink-left {
+    width: 43%;
+    display: inline-block;
+    float: left;
+    color: white;
+    margin: 40px 40px 0 23px;
+}
+
+#pink-left h2 {
+    font-family: 'Futura-Med';
+    font-size: 35px;
+    padding-bottom: 81px;
+}
+
+#pink-left ul {
+    list-style: none;
+    font-size: 20px;
+    text-align: left;
+}
+#pink-left ul li {
+    margin-bottom: 80px;
+}
+
+#pink-left ul li img {
+    margin-top: 0;
+    margin-right: 22px;
+    text-align: left;
+}
+
+#pink-button {
+    font-family: 'Lato';
+    font-size: 20px;
+    color: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border: white solid 2px;
+    border-radius: 30px;
+}
+
+#pink-button:hover {
+    color: #ff6666;;
+    background: white;
+}
 /**footer**/
 
 footer {
