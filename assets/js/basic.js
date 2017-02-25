@@ -8,14 +8,18 @@ window.onscroll = function toto() {
 }
 var titi;
 
-$('#sticky input[type=tel]').click(function() {
-    console.log('fix');
-    $('#sticky').css({
-        'right': '0px',
-        'transition': 'all ease 1s'
+function bouh() {
+        $('#sticky input[type=tel]').click(function() {
+        console.log('fix');
+        $('#sticky').css({
+            'right': '0px',
+            'transition': 'all ease 1s'
+        });
+        console.log('after');
     });
-    console.log('after');
-});
+}
+
+bouh();
 
 
 $('#sticky input[type=submit]').click(function(e) {
@@ -49,9 +53,10 @@ function wait_third_sec() {
     }, function() {
         console.log('out');
         $('#sticky').css({
-            'right': '-730px',
+            'right': '0px',
             'transition': 'all ease 1s'
         });
     });
+    bouh();
     clearTimeout(titi);
 }

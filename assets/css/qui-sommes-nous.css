@@ -30,15 +30,25 @@ header nav>ul>li:nth-child(2)>a:after {
     width: 100%;
 }
 
+#presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 97px;
+}
+
 #creator {
-    text-align: center;
     overflow: hidden;
 }
 
 #julie {
     float: left;
-    width: 50%;
+    width: 47.5%;
     padding-top: 81px;
+    border-right: dotted 5px #f64747;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #julie img {
@@ -52,7 +62,8 @@ header nav>ul>li:nth-child(2)>a:after {
     font-family: 'Lobster';
     font-size: 40px;
     width: 16%;
-    margin: 33px 166px 0 222px;
+    margin-top: 33px;
+    line-height: 25px;
 }
 
 #julie span {
@@ -74,22 +85,46 @@ header nav>ul>li:nth-child(2)>a:after {
 }
 
 #julie-quote-text img:first-child {
-    margin-bottom: 150px;
+    margin-bottom: 110px;
 }
 
 #julie-quote-text p {
     text-align: left;
-    font-size: 16px;
+    font-size: 15px;
     font-family: 'Lato';
-    width: 51%;
+    width: 291px;
     display: inline-block;
     margin: 0 0;
+    line-height: inherit;
+}
+
+#julie-text-blue {
+    width: 366px;
+    height: 191px;
+    background-color: #4ecdc4;
+    margin-top: 71px;
+    margin-bottom: 90px;
+    text-align: left;
+    border-radius: 20px;
+}
+
+#julie-text-blue p {
+    width: 314px;
+    font-family: 'Lato';
+    font-size: 15px;
+    color: white;
+    margin: 0 0;
+    padding: 29px 26px 29px 26px;
+    line-height: inherit;
 }
 
 #emmanuelle {
     float: left;
-    width: 50%;
+    width: 47.5%;
     padding-top: 81px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #emmanuelle img {
@@ -104,8 +139,69 @@ header nav>ul>li:nth-child(2)>a:after {
     font-size: 40px;
     width: 38%;
     margin: 33px 166px 0 154px;
+    line-height: 25px;
 }
 
 #emmanuelle span {
     font-size: 30px;
+}
+
+#emmanuelle-quote-text {
+    margin-top: 35px;
+    display: inline-block
+}
+
+#emmanuelle-quote-text img {
+    width: 30px;
+    height: 21px;
+    border-radius: 0;
+    border: 0px;
+    display: inline-block;
+    transform: rotateX(180deg);
+}
+
+#emmanuelle-quote-text img:first-child {
+    margin-bottom: 110px;
+}
+
+#emmanuelle-quote-text p {
+    text-align: left;
+    font-size: 15px;
+    font-family: 'Lato';
+    width: 291px;
+    display: inline-block;
+    margin: 0 0;
+    line-height: inherit;
+}
+
+#emmanuelle-text-blue {
+    width: 366px;
+    height: 191px;
+    background-color: #4ecdc4;
+    margin-top: 71px;
+    margin-bottom: 90px;
+    text-align: left;
+    border-radius: 20px;
+}
+
+#emmanuelle-text-blue p {
+    width: 314px;
+    font-family: 'Lato';
+    font-size: 15px;
+    color: white;
+    margin: 0 0;
+    padding: 29px 26px 29px 26px;
+    line-height: inherit;
+}
+
+#red-text {
+    width: 288px;
+    height: 84px;
+    font-family: 'Lato';
+    font-size: 15px;
+    color: white;
+    padding: 31px 106px 31px 106px;
+    border-radius: 20px;
+    background-color: #f64747;
+    text-align: left;
 }
