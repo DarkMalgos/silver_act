@@ -142,7 +142,58 @@ header nav>ul>li:last-child>a:after {
     background: #dbd7d8;
 }
 
+/* header move */
 
+#header-move {
+    width: 100%;
+    position: fixed;
+    display: none;
+    opacity: 0;
+    transition: all ease 1s;
+    z-index: 100;
+}
+
+#header-move ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header-move ul img {
+    width: 193px;
+}
+
+#header-move ul li:nth-child(2) {
+    margin-left: 50px;
+}
+
+#header-move ul>li:first-child>a:after {
+    background: none;
+}
+
+#header-move ul>li:nth-child(2)>a:after {
+    background: #db0a5b;
+}
+
+#header-move ul>li:nth-child(3)>a:after {
+    background: #f64747;
+}
+
+#header-move ul>li:nth-child(4)>a:after {
+    background: #f7ca18;
+}
+
+#header-move ul>li:nth-child(5)>a:after {
+    background: #4ecdc4;
+}
+
+#header-move ul>li:nth-child(6)>a:after {
+    background: #a2ded0;
+}
+
+#header-move ul>li:last-child>a:after {
+    background: #dbd7d8;
+}
 
 /** STICKY **/
 
