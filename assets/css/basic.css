@@ -9,6 +9,14 @@
 }
 
 @font-face {
+    font-family: 'Futura-Bold';
+    src: url('../fonts/FuturaStd-Bold.eot');
+    src: local('☺'), url('../fonts/FuturaStd-Bold.woff') format('woff'), url('../fonts/FuturaStd-Bold.ttf') format('truetype'), url('../fonts/FuturaStd-Bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Lato';
     src: url('../fonts/Lato-Bla.eot');
     src: local('☺'), url('../fonts/Lato-Black.woff') format('woff'), url('../fonts/Lato-Bla.ttf') format('truetype'), url('../fonts/Lato-Bla.svg') format('svg');
@@ -147,7 +155,7 @@ header nav>ul>li:last-child>a:after {
 #header-move {
     width: 100%;
     position: fixed;
-    display: none;
+    top: -80px;
     opacity: 0;
     transition: all ease 1s;
     z-index: 100;
@@ -202,7 +210,7 @@ header nav>ul>li:last-child>a:after {
     width: 800px;
     background-color: #f64747;
     position: fixed;
-    top: 50%;
+    top: 40%;
     margin-top: -35px;
     right:-730px;
     border-top-left-radius: 15px;
@@ -336,7 +344,7 @@ footer>.footer-content {
 
 
 #social>ul>li:last-child>a{
-    background:url(../img/instagram.png);
+    background:url(../img/google_plus.png);
 }
 
 #social>ul>li:first-child:hover>a{
@@ -350,7 +358,7 @@ footer>.footer-content {
 
 
 #social>ul>li:last-child:hover>a{
-    background:url(../img/instagram-hover.png);
+    background:url(../img/google_plus_hover.png);
 }
 
 

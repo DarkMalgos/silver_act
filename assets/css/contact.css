@@ -1,3 +1,9 @@
+/* sticky */
+
+#sticky {
+    display: none;
+}
+
 /* Header */
 
 header nav>ul>li:last-child>a:after {
@@ -59,6 +65,7 @@ header nav>ul>li:last-child>a:after {
     margin-top: 79px;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     margin-bottom: 87px;
 }
@@ -75,6 +82,7 @@ header nav>ul>li:last-child>a:after {
     font-family: 'Futura-Med';
     font-size: 20px;
     padding-right: 26px;
+    margin-left: 30%;
 }
 
 #form-left label:first-child {

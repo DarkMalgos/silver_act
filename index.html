@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <title>Silver Act' - Bien Vieillir</title>
     <meta name="description" content="Silver Act'">
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/swiper.mini.css">
     <link rel="stylesheet" href="assets/css/basic.css">
     <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/homeTab.css" media="screen  and (max-width: 1023px)">
     <!--
-    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen  and (min-width:1001px)">
     <link rel="stylesheet" type="text/css" href="css/padstyle.css" media="screen and (max-width:1000px) and (min-width:651px)">
     <link rel="stylesheet" type="text/css" href="css/mobstyle.css" media="screen and (max-width:650px)">
 -->
@@ -37,14 +38,19 @@
         </div>
     </div>
     <header>
+       <div id="header-icon">
+           <div class="burger"></div>
+           <div class="burger"></div>
+           <div class="burger"></div>
+       </div>
         <h1><img src="assets/img/logo_silver_act.png" alt="Silver Act Logo" ></h1>
-        <nav >
+        <nav>
             <ul class="center-col">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="assets/html/qui-sommes-nous.html">Qui sommes nous ?</a></li>
                 <li><a href="assets/html/comment-ca-marche.html">Comment ça marche ?</a></li>
                 <li><a href="">Nos Activités</a></li>
-                <li><a href="">Questions Fréquentes</a></li>
+                <li><a href="">Questions fréquentes</a></li>
                 <li><a href="assets/html/contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -58,6 +64,16 @@
                 <li><a href="">Questions Fréquentes</a></li>
                 <li><a href="">Contact</a></li>
            </ul>            
+        </nav>
+        <nav id="mobtab-nav">
+            <ul class="center-col">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="assets/html/qui-sommes-nous.html">Qui sommes nous ?</a></li>
+                <li><a href="">Comment ça marche ?</a></li>
+                <li><a href="">Nos activités</a></li>
+                <li><a href="">Questions fréquentes</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
         </nav>
     </header>
     
@@ -76,18 +92,6 @@
             <div class="swiper-button-prev swiper-button-white"></div>   
         </section>
         
-        <section id="how-it-work">
-            <div id="green-block" class="center-col">
-                <img src="assets/img/home/illustration_01.png">
-                <div id="green-right">
-                    <h3>Comment ça marche ?</h3>
-                    <p>Deatur? Qui ommodio. Senderspero temped ut versperuptat volo dolor aut volora vel in rest qui verum ut ut am ra cor re cuptatus dolupiet mi, aute ommodignia non re, oditatu recat.</p>
-                    <p>natem dolupti stiunt re quam repudit ut quisquo bea nis volut ad minvele stionse quibus quibea consequi voluptaerrum autas et volora volorum, serum rem escient. Sedi te nis sitatur mod ma veni volupici blandae cepero consequi iliquas expliquatur, et, aut fugitas quam nullent.</p>
-                    <a href="assets/html/comment-ca-marche.html" id="green-button">En savoir plus</a>
-                </div>
-            </div>
-        </section>
-        
         <section id="our-activitis">
             <div id="pink-block" class="center-col">
                 <div id="pink-left">
@@ -103,6 +107,18 @@
                     <a href="assets/html/" id="pink-button">En savoir plus</a>
                 </div>
                 <img src="assets/img/home/illustration_02.png">
+            </div>
+        </section>
+        
+        <section id="how-it-work">
+            <div id="green-block" class="center-col">
+                <img src="assets/img/home/illustration_01.png">
+                <div id="green-right">
+                    <h3>Comment ça marche ?</h3>
+                    <p>Deatur? Qui ommodio. Senderspero temped ut versperuptat volo dolor aut volora vel in rest qui verum ut ut am ra cor re cuptatus dolupiet mi, aute ommodignia non re, oditatu recat.</p>
+                    <p>natem dolupti stiunt re quam repudit ut quisquo bea nis volut ad minvele stionse quibus quibea consequi voluptaerrum autas et volora volorum, serum rem escient. Sedi te nis sitatur mod ma veni volupici blandae cepero consequi iliquas expliquatur, et, aut fugitas quam nullent.</p>
+                    <a href="assets/html/comment-ca-marche.html" id="green-button">En savoir plus</a>
+                </div>
             </div>
         </section>
         
