@@ -1,3 +1,24 @@
+$('#red-button').click(function () {
+    $('#red-button').css('width', '150%');
+    $('#user-info').css('display', 'block');
+});
+
+$('#yellow-button').click(function () {
+    $('#yellow-button').css('width', '150%');
+    $('#second-form').css('display', 'block');
+});
+
+$('.quit').click(function () {
+    var check = $(this).attr('id');
+    if (check == '1') {
+        $('#red-button').css('width', '290px');
+        $('#user-info').css('display', 'none');  
+    } else if ( check == '2') {
+        $('#yellow-button').css('width', '290px');
+        $('#second-form').css('display', 'none');
+    }
+})
+
 $('#row-img').click(function () {
     $('#message-zone').css('display', 'none');
     $('#row-img').css('transform', 'rotate(360deg)');
