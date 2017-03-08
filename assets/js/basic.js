@@ -21,8 +21,9 @@ $('#header-icon').click(function () {
             transform : 'translateY(-50%)',
             transform : 'rotate(-45deg)'
         });
-        $('header h1 img').attr("src", 'assets/img/logo_silver_act_footer.png');
+        $('header>h1~h1>img').attr("src", 'assets/img/logo-tablette-white.png');
         $('#mobtab-nav').css('display', 'block');
+        $('body').css('overflow', 'hidden');
     } else {
         $('header').css('background-color', 'white'); 
         $('.burger').css('background-color', '#7b7b7a');
@@ -41,7 +42,8 @@ $('#header-icon').click(function () {
             transform : 'translateY(-50%)',
         });
         $('header h1 img').attr("src", 'assets/img/logo_silver_act.png');
-         $('#mobtab-nav').css('display', 'none');
+        $('#mobtab-nav').css('display', 'none');
+        $('body').css('overflow', 'inherit');
     }
 });
 

@@ -73,10 +73,16 @@ header{
     padding-top:10px;
 }
 
+header>h1~h1 {
+    display: none;
+}
+
 header>h1>img{
     display:block;
     margin:0 auto 10px;
 }
+
+
 
 header nav{
     width:100%;
@@ -418,4 +424,108 @@ footer>.footer-content {
 h1{
     color:white;
     font-size: 35px;
+}
+
+@media screen  and (max-width: 1023px) {
+    /* basic */
+
+    .center-col {
+        width: 100%;
+    }
+
+    /* header */
+
+    header>h1 {
+        display: none;
+    }
+
+    header>h1~h1 {
+        display: block;
+    }
+
+    header {
+        height: auto;
+    }
+
+    header h1 {
+        padding-bottom: 30px;
+    }
+    header nav {
+        display: none;
+        height: auto;
+    }
+
+    #header-icon {
+        position: relative;
+        display: block;
+        float: right;
+        width: 30px;
+        height: 30px;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+
+    .burger {
+        position: absolute;
+        height: 5px;
+        width: 100%;
+        background-color: #7b7b7a;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    #header-icon div:first-child {
+        top: 0;
+    }
+
+    #header-icon div:last-child {
+        top: 100%;
+    }
+
+    #mobtab-nav {
+        background: #7b7b7a;
+        display: none;
+    }
+
+    #mobtab-nav ul {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 25px;
+    }
+
+    #mobtab-nav ul li a {
+        font-family: 'futura-med';
+        font-size: 15px;
+        color: white;
+    }
+
+    #mobtab-nav ul li a:after {
+        opacity: 1;
+    }
+
+
+    /* sticky */
+
+    #sticky {
+        display: none;
+    }
+
+    /* footer */
+    footer {
+        height: auto;
+        text-align: center;
+    }
+
+    footer>.footer-content {
+        height: auto;
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+
+    #secondarynav {
+        margin-top: 40px;
+    }
 }

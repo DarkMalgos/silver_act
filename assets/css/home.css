@@ -1,5 +1,6 @@
 /* Header */
 
+
 header nav>ul>li:first-child>a:after {
     content: '';
     width: 100%;
@@ -255,63 +256,55 @@ header nav>ul>li:first-child>a:after {
 
 /** Comments **/
 
-#comments{
+#swiper2{
    width: 100%;
    height: 350px;
    background: #a2ded0 ;
 }
 
-#all-comments{
+#swiper2>div {
     padding-top: 70px;
-    display: flex;
-    justify-content: center
 }
 
-#all-comments h4{
+#swiper2>div h4{
    font-size: 40px;
    text-align: right;
    font-family: 'Lobster';
    padding-bottom: 20px;
 }
 
-#all-comments p{
+#swiper2>div p{
    text-align: justify;
    font-family: 'Futura-Med';
    font-size: 15px;
 }
 
-#first-comment{
-   width: 250px;
-   height: 150px;
-   margin-right: 125px;
-   display: flex;
-   
+#swiper2 .swiper-slide{
+    display: flex;
+    justify-content: center;
 }
 
-#first-comment li:nth-child(5){
+#swiper2 .swiper-slide ul {
+    width: 300px;
+}
+
+#swiper2 .swiper-pagination-bullet {
+    border-radius: 0;
+    height: 5px;
+    width: 40px;
+}
+
+#swiper2>div>div li:nth-child(5){
    padding-left: 90px;
    padding-top: 40px;
 }
 
-
-#second-comment{
-   width: 250px;
-   height: 150px;
-   margin-right: 125px;
-   
-}
-
-#second-comment li:nth-child(5){
+#swiper2>div>div~div li:nth-child(5){
    padding-left: 90px;
    padding-top: 40px;
 }
 
-#third-comment{
-   width: 250px;
-   height: 150px;
-}
-
-#third-comment li:nth-child(5){
+#swiper2>div>div~div~div li:nth-child(5){
    padding-left: 90px;
    padding-top: 40px;
 }
@@ -320,6 +313,295 @@ header nav>ul>li:first-child>a:after {
    padding-left: 30px;
 }
 
-#all-comments li:nth-child(4n+0){
+#swiper2>div li:nth-child(4n+0){
    float: right;
+}
+
+@media screen  and (max-width: 1023px) {
+    /* swiper top */
+    .swiper-container {
+        height: 600px;
+    }
+
+    /* our activites */
+
+    #our-activitis {
+        height: auto;
+    }
+
+    #pink-block {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #pink-block img {
+        margin: 0;
+        float: none;
+        height: 400px;
+    }
+
+    #pink-left {
+        float: none;
+        width: 100%;
+        margin: 40px 0;
+    }
+
+    #pink-left ul {
+        margin-left: 40px;
+        margin-bottom: 40px;
+    }
+
+    #pink-left ul li {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 40px;
+        font-family: 'Lato';
+        justify-content: center;
+    }
+
+    #pink-left ul li p {
+        width: 50%;
+    }
+
+    #pink-left ul li img {
+        margin-right: 22px;
+        text-align: left;
+        display: inline-block;
+        height: 75px;
+    }
+
+    #pink-button {
+        display: inline;
+        padding: 15px 30px;
+    }
+
+    /* how it work */
+
+    #how-it-work {
+        height: auto;
+    }
+
+    #green-block {
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #green-block img {
+        float: none;
+        height: 50%;
+        width: 50%;
+        margin-top: 80px;
+        padding-left: 80px;
+    }
+
+    #green-right {
+        float: none;
+        width: 80%;
+        margin-top: 80px;
+        padding-right: 40px;
+        margin-left: 10px;
+    }
+
+    #green-right p {
+        margin-right: 100px;
+    }
+
+    #green-button {
+        margin-top: 50px;
+        margin-bottom: 20px;
+        margin-right: 80px;
+        margin-left: 0;
+    }
+
+    /* our profit */
+
+    #our-profit {
+        height: auto;
+        margin-bottom: 40px;
+    }
+
+    #profits {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #profits ul {
+        margin: 0;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #profits ul li {
+        margin-left: 22px;
+        width: 50%;
+        text-align: left;
+    }
+
+    /* comment */
+    #swiper2 .swiper-slide ul {
+        width: 250px;
+    }
+
+    #swiper2 .swiper-pagination-bullet {
+        border-radius: 0;
+        height: 5px;
+        width: 20px;
+    }    
+}
+
+@media screen  and (max-width: 768px) {
+    /* swiper top */
+    .swiper-container {
+        height: 600px;
+    }
+
+    /* our activites */
+
+    #our-activitis {
+        height: auto;
+    }
+
+    #pink-block {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #pink-block img {
+        margin: 0;
+        float: none;
+        height: 400px;
+    }
+
+    #pink-left {
+        float: none;
+        width: 100%;
+        margin: 40px 0;
+    }
+
+    #pink-left ul {
+        margin-left: 40px;
+        margin-bottom: 40px;
+    }
+
+    #pink-left ul li {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 40px;
+        font-family: 'Lato';
+        justify-content: center;
+    }
+
+    #pink-left ul li p {
+        width: 50%;
+    }
+
+    #pink-left ul li img {
+        margin-right: 22px;
+        text-align: left;
+        display: inline-block;
+        height: 75px;
+    }
+
+    #pink-button {
+        display: inline;
+        padding: 15px 30px;
+    }
+
+    /* how it work */
+
+    #how-it-work {
+        height: auto;
+    }
+
+    #green-block {
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #green-block img {
+        float: none;
+        height: 50%;
+        width: 50%;
+        margin-top: 80px;
+        margin-right: 160px;
+    }
+
+    #green-right {
+        float: none;
+        width: 70%;
+        margin-top: 40px;
+        padding-right: 0;
+        margin-left: 80px;
+    }
+    
+    #green-right h3 {
+        font-size: 20px;    
+    }
+    
+    #green-right p {
+        font-size: 15px;
+        margin-right: 100px;
+    }
+
+    #green-button {
+        width: 200px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        margin-right: 80px;
+        margin-left: 0;
+    }
+
+    /* our profit */
+
+    #our-profit {
+        height: auto;
+        margin-bottom: 40px;
+    }
+
+    #profits {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #profits ul {
+        margin: 0;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #profits ul li {
+        margin-left: 22px;
+        width: 50%;
+        text-align: left;
+    }
+
+    /* comment */
+    #swiper2 .swiper-slide ul {
+        width: 250px;
+    }
+
+    #swiper2 .swiper-pagination-bullet {
+        border-radius: 0;
+        height: 5px;
+        width: 20px;
+    }
 }

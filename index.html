@@ -10,11 +10,9 @@
     <link rel="stylesheet" href="assets/css/swiper.mini.css">
     <link rel="stylesheet" href="assets/css/basic.css">
     <link rel="stylesheet" href="assets/css/home.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/homeTab.css" media="screen  and (max-width: 1023px)">
-    <!--
-    <link rel="stylesheet" type="text/css" href="css/padstyle.css" media="screen and (max-width:1000px) and (min-width:651px)">
-    <link rel="stylesheet" type="text/css" href="css/mobstyle.css" media="screen and (max-width:650px)">
--->
+    <link rel="stylesheet" type="text/css" href="assets/css/basic.css" media="screen  and (max-width: 1023px)">
+    <link rel="stylesheet" type="text/css" href="assets/css/home.css" media="screen  and (max-width: 1023px)">
+     <link rel="stylesheet" type="text/css" href="assets/css/home.css" media="screen  and (max-width: 768px)">
     <link rel="icon" type="image/png" href="assets/img/favicon32.png">
 </head>
 
@@ -44,6 +42,7 @@
            <div class="burger"></div>
        </div>
         <h1><img src="assets/img/logo_silver_act.png" alt="Silver Act Logo" ></h1>
+        <h1><img src="assets/img/logo_tablette.png" alt="Silver Act Logo"></h1>
         <nav>
             <ul class="center-col">
                 <li><a href="index.html">Home</a></li>
@@ -78,7 +77,7 @@
     </header>
     
     <main>
-        <section class = "swiper-container">
+        <section id="swiper1" class="swiper-container">
             <div class="swiper-wrapper">
                 <img alt="senior" src="assets/img/Senior.jpg" class="swiper-slide">
                 <img alt="Sport" src="assets/img/sport.jpg" class="swiper-slide">
@@ -144,10 +143,9 @@
                 </div>
             </div>
         </section>
-
-        <section id="comments">
-            <div id="all-comments" class="center-col">                        
-                <div id="first-comment">
+        <section id="swiper2" class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
                     <ul>
                         <li><h4>Emilie</h4></li>
                         <li><img src="assets/img/home/quote-01.png"> </li>
@@ -164,7 +162,7 @@
                         </li>
                     </ul>
                 </div>
-                <div id="second-comment">
+                <div class="swiper-slide">
                     <ul>
                         <li><h4>Sarah</h4></li>
                         <li><img src="assets/img/home/quote-01.png"> </li>
@@ -180,8 +178,8 @@
                             </div>
                         </li>
                     </ul>
-                </div>           
-                <div id="third-comment">
+                </div>
+                <div class="swiper-slide">
                     <ul>
                         <li><h4>Jean</h4></li>
                         <li><img src="assets/img/home/quote-01.png"> </li>
@@ -197,8 +195,114 @@
                             </div>
                         </li>
                     </ul>
-                </div>            
+                </div>
+                <div class="swiper-slide">
+                    <ul>
+                        <li><h4>Emilie</h4></li>
+                        <li><img src="assets/img/home/quote-01.png"> </li>
+                        <li class="align"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p></li>
+                        <li><img src="assets/img/home/quote-02.png"> </li>
+                        <li>
+                            <div id="stars">
+                                <img alt="star" src="assets/img/home/star-full.png">
+                                <img alt="star" src="assets/img/home/star-full.png">
+                                <img alt="star" src="assets/img/home/star-full.png">
+                                <img alt="star" src="assets/img/home/star-full.png">
+                                <img alt="star" src="assets/img/home/star-null.png">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <ul>
+                        <li><h4>Sarah</h4></li>
+                        <li><img src="assets/img/home/quote-01.png"> </li>
+                        <li class="align"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p></li>
+                        <li><img src="assets/img/home/quote-02.png"> </li>
+                        <li>
+                            <div id="second-stars">
+                                <img alt="star" src="assets/img/home/star-full.png">
+                                <img alt="star" src="assets/img/home/star-full.png">
+                                <img alt="star" src="assets/img/home/star-full.png">
+                                <img alt="star" src="assets/img/home/star-full.png">
+                                <img alt="star" src="assets/img/home/star-null.png">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <ul>
+                        <li><h4>Jean</h4></li>
+                        <li><img src="assets/img/home/quote-01.png"> </li>
+                        <li class="align"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p></li>
+                        <li><img src="assets/img/home/quote-02.png"> </li>
+                        <li>
+                            <div id="third-stars">
+                                <img alt="star" src="assets/img/home/star-full.png">
+                                <img alt="star" src="assets/img/home/star-full.png">
+                                <img alt="star" src="assets/img/home/star-full.png">
+                                <img alt="star" src="assets/img/home/star-full.png">
+                                <img alt="star" src="assets/img/home/star-null.png">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <ul>
+                        <li><h4>Emilie</h4></li>
+                        <li><img src="assets/img/home/quote-01.png"> </li>
+                        <li class="align"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p></li>
+                        <li><img src="assets/img/home/quote-02.png"> </li>
+                        <li>
+                            <div id="stars">
+                                <img alt="star" src="assets/img/home/star-full.png">
+                                <img alt="star" src="assets/img/home/star-full.png">
+                                <img alt="star" src="assets/img/home/star-full.png">
+                                <img alt="star" src="assets/img/home/star-full.png">
+                                <img alt="star" src="assets/img/home/star-null.png">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <ul>
+                        <li><h4>Sarah</h4></li>
+                        <li><img src="assets/img/home/quote-01.png"> </li>
+                        <li class="align"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p></li>
+                        <li><img src="assets/img/home/quote-02.png"> </li>
+                        <li>
+                            <div id="second-stars">
+                                <img alt="star" src="assets/img/home/star-full.png">
+                                <img alt="star" src="assets/img/home/star-full.png">
+                                <img alt="star" src="assets/img/home/star-full.png">
+                                <img alt="star" src="assets/img/home/star-full.png">
+                                <img alt="star" src="assets/img/home/star-null.png">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <ul>
+                        <li><h4>Jean</h4></li>
+                        <li><img src="assets/img/home/quote-01.png"> </li>
+                        <li class="align"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p></li>
+                        <li><img src="assets/img/home/quote-02.png"> </li>
+                        <li>
+                            <div id="third-stars">
+                                <img alt="star" src="assets/img/home/star-full.png">
+                                <img alt="star" src="assets/img/home/star-full.png">
+                                <img alt="star" src="assets/img/home/star-full.png">
+                                <img alt="star" src="assets/img/home/star-full.png">
+                                <img alt="star" src="assets/img/home/star-null.png">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
+            <div class="swiper-pagination swiper-pagination-white"></div>
+            <!-- Ajouter Arrows -->
+            <div class="swiper-button-next swiper-button-white"></div>
+            <div class="swiper-button-prev swiper-button-white"></div> 
         </section>
     </main>
     
@@ -227,7 +331,7 @@
                     <a href="assets/html/contact.html">Contact</a>
                 </li>
                 <li>
-                    <a href="">Questions Fréquentes</a>
+                    <a href="assets/html/questions-fr%C3%A9quentes.html">Questions Fréquentes</a>
                 </li>
                 <li>
                     <a href="">Mentions Légales</a>
