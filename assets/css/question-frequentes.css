@@ -1,0 +1,266 @@
+/* header */
+
+header nav>ul>li:nth-child(5)>a:after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    opacity: 0.5;
+    transition: all ease 1s;
+}
+
+#header-move ul>li:nth-child(5)>a:after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    opacity: 0;
+    transition: all ease 1s;
+}
+
+
+#header-move ul>li:nth-child(6)>a:after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    opacity: 0.5;
+    transition: all ease 1s;
+}
+
+            /* part 1 */
+
+#part1-band {
+    width: 100%;
+    height: 80px;
+    color: white;
+    font-family: 'Futura-Med';
+    font-size: 30px;
+    background-color: #a2ded0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#part1-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Futura-Med';
+    font-size: 15px;
+}
+
+#part1-content p {
+    width: 627px;
+    margin-top: 5%;
+}
+
+#tags {
+    margin: 6% 0% 11% 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#first-tags {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-right: 50px;
+    font-family: 'Futura-Med';
+    font-size: 15px;
+}
+
+#first-tags p {
+    width: 105px;
+    border: solid 1px #4ECDC4;
+    border-radius: 12px;
+    padding: 13px 25px;
+}
+
+#second-tags {
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 25px;
+    font-family: 'Futura-Med';
+    font-size: 15px;
+}
+
+#second-tags p {
+    width: 105px;
+    border: solid 1px #4ECDC4;
+    padding: 13px 25px;
+    border-radius: 12px;
+}
+
+#second-tags p:nth-child(1) {
+    margin-right: 25px;
+}
+
+
+        /** questions section **/
+
+
+#questions {
+    height: auto;
+}
+
+.interview {
+    line-height: 50px;
+    color: white;
+    font-family: 'Futura-Med';
+    font-size: 20px;
+}
+
+.answers {
+    color: black;
+    font-family: 'Futura-Med';
+    font-family: 15px;
+    height: 50px;
+    line-height: 25px;
+    margin-bottom: 2%;
+    display: none;
+}
+#question-box-one {
+    height: 50px;
+    background: #DB0A5B;
+    display: flex;
+}
+
+#question-box-two {
+    height: 50px;
+    background: #F64747;
+    display: flex;
+}
+
+#question-box-three {
+    height: 50px;
+    background: #F7CA18;
+    display: flex;
+}
+
+#question-box-four {
+    height: 50px;
+    background: #4ECDC4;
+    display: flex;
+}
+
+#question-box-five {
+    height: 50px;
+    background: #3EDED0;
+    display: flex;
+}
+
+#question-box-six {
+    height: 50px;
+    background: #DBD7D8;
+    display: flex;
+}
+
+#questions img {
+    height: 21px;
+    margin: 1.5% 4%;
+    cursor: pointer;
+}
+
+.spin-moove:hover {
+    transform: rotate(90deg);
+    transition: all ease 1s;
+}
+@-webkit-keyframes spin {
+    from { transform: rotate(0deg);}
+    to {transform: rotate(90deg)}
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg);}
+    to {transform: rotate(90deg)}
+}
+
+        /** schedule **/
+
+
+#schedule {
+    height: 600px;
+    font-family: 'Futura-Med';
+    font-family: 20px;
+}
+
+#agenda {
+    margin-top: 103px;
+    /* border: 0px solid #3EDED0; */
+    border-radius: 10px;
+    box-shadow: #3EDED0 9px 3px 32px -3px;
+    text-align: center;
+    width: 60%;
+    margin-left: 20%;
+}
+
+
+#agenda p:nth-child(2) {
+    width: 20%;
+    height: 34px;
+    background: #4ECDC4;
+    border-radius: 12px;
+    line-height: 34px;
+    margin: 5% 0% 5% 39.5%;
+}
+
+#agenda p:nth-child(4) {
+    width: 20%;
+    height: 34px;
+    background: #DB0A5B;
+    border-radius: 12px;
+    line-height: 34px;
+    margin: 5% 0% 5% 39.5%;
+}
+
+#button-contact {
+   width: 23%;
+    height: 8%;
+    background: none;
+    border-radius: 25px;
+    /* border: none; */
+    color: #7C7C7B;
+    font-family: 'Futura-Med';
+    font-size: 20px;
+    text-align: center;
+    margin: 10% 0% 0% 38%;
+    /* margin-left: 38%; */
+}
+
+#button-contact:hover {
+    background: #4ECDC4;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
