@@ -1,6 +1,6 @@
 /* Header */
 
-header nav>ul>li:nth-child(3)>a:after {
+header nav>ul>li:nth-child(4)>a:after {
     content: '';
     width: 100%;
     height: 3px;
@@ -10,3 +10,166 @@ header nav>ul>li:nth-child(3)>a:after {
     opacity: 0.5;
     transition: all ease 1s;
 }
+
+#part-green {
+    width: 100%;
+    background-color: #A2DED0;
+}
+
+#part-green h2 {
+    width: 100%;
+    background-color: #F64747;
+    font-family: "lato";
+    font-size: 30px;
+    color: white;
+    padding: 25px 0;
+    text-align: center;
+}
+
+#part-green>div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: "futura-med";
+    font-size: 15px;
+    color: white;
+    padding: 80px;
+}
+
+#part-green>div h3 {
+    font-family: "Lobster";
+    font-size: 40px;
+}
+
+#part-green>div>h3~p {
+    margin-top: 40px;
+}
+
+#part-green>div>div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#part-green>div>div p{
+    padding-left: 35px;
+    margin: 0;
+}
+
+#our-offert {
+    width: 100%;
+    background-color: white;
+}
+
+#our-offert>div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: "futura-med";
+    font-size: 20px;
+    color: #7C7C7B;
+}
+
+#our-offert>div h3 {
+    font-family: "lobster";
+    font-size: 40px;
+    color: black;
+    margin-top: 80px;
+}
+
+#our-offert>div>div>h3~p {
+    margin-top: 50px;
+    margin-bottom: 32px;
+}
+
+#red-offert {
+    margin-top: 35px;
+    width: 100%;
+    background-color:#F64747;
+}
+
+#yellow-offert {
+    width: 100%;
+    background-color:#F7CA18;
+}
+
+#green-offert {
+    width: 100%;
+    background-color:#4ECDC4;
+}
+#our-offert .offert {
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+}
+
+#our-offert .offert p {
+    width: 550px;
+    margin-right: 20px;
+    font-size: 15px;
+}
+
+#our-offert .offert h4 {
+    font-size: 57px;
+    width: 100px;
+}
+
+#contact {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+#contact>div h3 {
+    font-family: "lobster";
+    font-size: 40px;
+}
+
+#contact>div>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.space{
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 450px;
+}
+.space.red {
+    background-color: #4ECDC4;
+    width: 300px;
+    border-radius: 12px;
+    font-size: 22px;
+    padding: 9px 0;
+    color:white;
+}
+
+.space.blue {
+    background-color: #F64747;
+    width: 300px;
+    border-radius: 12px;
+    font-size: 22px;
+    padding: 9px 0;
+    color:white;
+}
+
+.space.white {
+    background-color: white;
+    width: 300px;
+    border-radius: 12px;
+    font-size: 22px;
+    padding: 9px 0;
+    color:#F7CA18;
+    border: solid 1px #F7CA18;
+    margin-bottom: 80px;
+}
+
+
+
+
+
