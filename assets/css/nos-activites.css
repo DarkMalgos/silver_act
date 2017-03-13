@@ -1,0 +1,795 @@
+/* Header */
+
+header nav>ul>li:nth-child(4)>a:after,
+#header-move>ul>li:nth-child(5)>a:after {
+    opacity: 0.5;
+}
+
+#header-move>ul>li:nth-child(4)>a:after,
+.responsivetab nav>ul>li:nth-child(3)>a:after {
+    opacity: 0;
+}
+
+.responsivetab nav>ul>li:nth-child(4)>a:after {
+    opacity: 1;
+}
+
+h2 {
+    height: 40px;
+    background-color: #4ecdc4;
+    font-family: lato-black;
+    text-align: center;
+    color: white;
+    line-height: 40px;
+    font-size: 20px
+}
+
+main {
+    height: 840px;
+    position: relative;
+}
+
+
+/**ACTIVITIES CONTENT BASIS**/
+
+#activities-content {
+    width: 100%;
+    position: absolute;
+    height: 840px;
+    opacity: 0;
+    right: -100%;
+    top: 0;
+    z-index: 400;
+}
+
+#close-activity {
+    height: 30px;
+    width: 30px;
+    background: url(../img/activities/close.png) center no-repeat;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+}
+
+
+/**ACTIVITIES PANNEL **/
+
+.activity {
+    height: 400px;
+    width: 33.33%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.activity h3 {
+    width: 100%;
+    text-align: center;
+    font-family: Lato-light;
+    color: white;
+    font-size: 20px;
+}
+
+.activity>.icon {
+    height: 208px;
+}
+
+#memory {
+    background-color: #db0a5b;
+}
+
+#memory>.icon {
+    background: url(../img/activities/memoire-et-stimulation-icon.png) no-repeat center;
+}
+
+#outings {
+    background-color: #f64747;
+}
+
+#outings>.icon {
+    background: url(../img/activities/sorties-et-balades-icon.png) no-repeat center;
+}
+
+#sport {
+    background-color: #f7ca18;
+}
+
+#sport>.icon {
+    background: url(../img/activities/activites-physiques-adaptees-icon.png) no-repeat center;
+}
+
+#private-classes {
+    background-color: #4ecdc4;
+}
+
+#private-classes>.icon {
+    background: url(../img/activities/cours-a-domicile-icon.png) no-repeat center;
+}
+
+#beauty {
+    background-color: #a2ded0;
+}
+
+#beauty>.icon {
+    background: url(../img/activities/atelier-beaute-icon.png) no-repeat center;
+}
+
+#fun-activities {
+    background-color: #ccc;
+}
+
+#fun-activities>.icon {
+    background: url(../img/activities/activites-ludiques-icon.png) no-repeat center;
+}
+
+
+/** INSIDE PAGES **/
+
+#memory-content,
+#sports-content,
+#beauty-content,
+#hobbies-content,
+#tutoring-content,
+#outings-content {
+    display: flex;
+    position: relative;
+}
+
+
+/** Type-A**/
+
+.photo-col {
+    width: 30%;
+    height: 840px;
+}
+
+.text-content {
+    width: 70%;
+    height;
+    820px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.text-content h3 {
+    font-family: Lato;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+
+.text-content h4,
+.photo-intervenants-content h4 {
+    font-family: Lobster;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+.text-content p,
+.text-content strong,
+.text-content ul,
+.text-content li,
+.photo-intervenants-content p {
+    font-family: Futura-Med;
+    font-size: 14px;
+    color: white;
+    line-height: 20px;
+}
+
+.text-content strong {
+    font-family: Futura-Bold;
+}
+
+.text-content a,
+.photo-intervenants-content a {
+    display: block;
+    height: 50px;
+    width: 235px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    font-family: Futura-Med;
+    font-size: 25px;
+    border-radius: 20px;
+    margin-top: 10px;
+    transition: all ease 1s;
+    margin:0 auto;
+    margin-top: 40px;
+}
+
+.profiles-intervenants {
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+}
+
+.profiles-intervenants .icon {
+    width: 141px;
+    height: 141px;
+}
+
+.nos-intervenants h4+div+p {
+    width: 490px;
+}
+
+.profiles-intervenants>.intervenant>p {
+    text-align: center;
+    font-family: lobster;
+    margin-top: 10px;
+}
+
+
+/** Type-B**/
+
+.photo-intervenants-content {
+    width: 50%;
+    height: 840px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.text-col {
+    width: 50%;
+    height;
+    820px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.photo-row {
+    height: 320px;
+}
+
+.photo-intervenants-content .nos-intervenants {
+    height: 340px;
+}
+
+
+/**MEMORY**/
+
+#activities-content {
+    background-color: #4ecdc4;
+}
+
+#memory-content .content-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 385px;
+}
+
+#memory-content .photo-col {
+    background: url(../img/activities/memoire-et-stimulation-image.png);
+    background-size: cover;
+}
+
+#stimulation-memorielle {
+    width: 600px;
+    -webkit-column-count: 2;
+    /* Chrome, Safari, Opera */
+    -moz-column-count: 2;
+    /* Firefox */
+    column-count: 2;
+}
+
+.nos-intervenants {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 300px;
+    align-items: center;
+}
+
+#memory-content .nos-intervenants {
+    width: 100%;
+}
+
+.profiles-intervenants>.intervenant:first-child>.icon {
+    background: url(../img/activities/memory-intervenant-marie.png);
+}
+
+.profiles-intervenants>.intervenant:nth-child(2)>.icon {
+    background: url(../img/activities/memory-intervenant-yves.png);
+}
+
+.profiles-intervenants>.intervenant:last-child>.icon {
+    background: url(../img/activities/memory-intervenant-robert.png);
+}
+
+#memory-content .text-content a {
+    background-color: #4ecdc4;
+}
+
+#memory-content .text-content a:hover {
+    background-color: #f7ca18;
+    transition: all ease 1s;
+}
+
+
+/** SPORTS **/
+
+#sports-content .content-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 335px;
+}
+
+#sports-content .photo-col {
+    background: url(../img/activities/activites-physiques-adaptes-image.png);
+    background-size: cover;
+}
+
+#sports-gym-yoga {
+    width: 600px;
+    -webkit-column-count: 2;
+    /* Chrome, Safari, Opera */
+    -moz-column-count: 2;
+    /* Firefox */
+    column-count: 2;
+}
+
+#sports-content .text-content {
+    justify-content: space-around;
+}
+
+#sports-content .text-content a {
+    background-color: #4ecdc4;
+}
+
+#sports-content .text-content a:hover {
+    background-color: #f7ca18;
+    transition: all ease 1s;
+}
+
+
+/** Beauty **/
+
+#beauty-content .content-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 360px;
+}
+
+#beauty-content .photo-col {
+    background: url(../img/activities/atelier-beaute-image.png);
+    background-size: cover;
+}
+
+#wellness-make-up-nails-salon {
+    width: 500px;
+}
+
+#wellness-make-up-nails-salon ul {
+    list-style: circle;
+    margin: 10px 0 10px 20px;
+}
+
+#beauty-content .text-content {
+    justify-content: space-around;
+}
+
+#beauty-content a {
+    margin-bottom: 30px;
+}
+
+#beauty-content .text-content a {
+    background-color: #4ecdc4;
+}
+
+#beauty-content .text-content a:hover {
+    background-color: #f7ca18;
+    transition: all ease 1s;
+}
+
+
+/** OUTINGS **/
+
+#outings-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#outings-content h3 {
+    margin-bottom: 40px;
+}
+
+#outings-and-walks h4 {
+    width: 100%;
+}
+
+#outings-and-walks p,
+#outings-and-walks h4 {
+    text-align: left
+}
+
+#outings-and-walks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 600px;
+    width: 440px;
+}
+
+#outings-content .photo-row {
+    background: url(../img/activities/sorties-et-balades-image.png) no-repeat;
+    background-size: cover;
+}
+
+#outings-content a {
+    background-color: #4ecdc4;
+    display: block;
+    margin: 45px auto;
+}
+
+#outings-content a:hover {
+    background-color: #f7ca18;
+    transition: all ease 1s;
+}
+
+
+/** Tutoring **/
+
+#tutoring-content {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    height: 800px;
+}
+
+#tutoring-content .photo-row {
+    background: url(../img/activities/cours-a-domicile-image.png) no-repeat;
+    background-size: cover
+}
+
+#tutoring {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 680px;
+}
+
+#tutoring h4+p,
+#tutoring h4+p+p {
+    width: 350px;
+}
+
+#other-courses h4 {
+    width: 100%;
+    text-align: left;
+}
+
+#other-courses {
+    width: 300px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#tutoring-content a {
+    background-color: dodgerblue;
+    display: block;
+    margin: 45px auto;
+}
+
+#tutoring-content a:hover {
+    background-color: red;
+    transition: all ease 1s;
+}
+
+
+/** HOBBIES **/
+
+#hobbies-content {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    height: 800px;
+}
+
+#hobbies-content .photo-row {
+    background: url(../img/activities/activities-ludiques-image.png) no-repeat;
+    background-size: cover
+}
+
+#hobbies {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 430px;
+}
+
+#hobbies>h4 {
+    margin-bottom: 20px;
+}
+
+#hobbies-content a {
+    background-color: dodgerblue;
+    display: block;
+    margin: 45px auto;
+}
+
+#hobbies-content a:hover {
+    background-color: red;
+    transition: all ease 1s;
+}
+
+
+/** RESPONSIVE **/
+
+.activity {
+    transition: all ease 1s;
+}
+
+* {
+    transition: all ease 1s;
+}
+
+@media screen and (max-width:1023px) {
+    .responsivetab nav>ul>li:nth-child(1)>a:after {
+        opacity: 0;
+    }
+    .responsivetab nav>ul>li:nth-child(4)>a:after {
+        opacity: 1;
+    }
+    .activity {
+        width: 50%;
+        height: 341.5px;
+        transition: all ease 1s
+    }
+    main {
+        height: 1065px
+    }
+    .photo-col {
+        width: 100%;
+        height: 200px;
+    }
+    #activities-content {
+        height: 1065px;
+    }
+    .nos-intervenants+a {
+        margin: 20px auto;
+    }
+    #memory-content,
+    #sports-content,
+    #hobbies-content,
+    #beauty-content,
+    #tutoring-content,
+    #outings-content {
+        flex-direction: column;
+    }
+    .text-content,
+    .text-col,
+    .photo-intervenants-content {
+        width: 100%;
+    }
+    .text-content {
+        width: 100%;
+        height: 460px;
+    }
+    #tutoring-content {
+        display: block;
+    }
+    #tutoring {
+        display: block;
+        width: 600px;
+    }
+    #tutoring p {
+        width: 600px;
+        margin: 0 auto;
+    }
+    #tutoring h4+p+p,
+    #tutoring h4+p {
+        width: 600px;
+        margin: 10px auto;
+    }
+    #other-courses {
+        display: block;
+        width: 100%;
+        height: 400px;
+    }
+    #tutoring-content .photo-row {
+        height: 150px;
+        margin-bottom: 0;
+        background-position: 0;
+    }
+    #tutoring-content .photo-intervenants-content {
+        display: block;
+    }
+    #tutoring-content .nos-intervenants {
+        height: 260px;
+    }
+    #memory-content .photo-col {
+        background: url(../img/activities/memoire-et-stimulation-image-tablette.png);
+        background-size: cover;
+    }
+    #outings-content .photo-row {
+        background: url(../img/activities/sorties-et-balades-image-tablette.png);
+        background-size: cover;
+        margin-top: 30px;
+        height: 200px;
+    }
+    #sports-content .photo-col {
+        background: url(../img/activities/activites-physiques-adaptes-image-tablette.png);
+        background-size: cover;
+        height: 200px;
+    }
+    #beauty-content .photo-col {
+        background: url(../img/activities/atelier-beaute-image-tablette.png);
+        background-size: cover;
+        height: 200px;
+    }
+    #outings-content {
+        height: 1024px;
+    }
+    #outings-and-walks {
+        width: 620px;
+        height: 400px;
+    }
+    #outings-content .photo-intervenants-content {
+        height: 600px;
+    }
+    #outings-content a {
+        margin-top: 10px;
+    }
+    #beauty-content {
+        display: block;
+        height: 800px;
+    }
+    #beauty-content .text-content {
+        height: 500px;
+    }
+    #hobbies-content {
+        width: 100%;
+    }
+    #hobbies-content {
+        display: flex;
+        height: 1110px;
+    }
+    #hobbies-content .text-col .text-content {
+        display: block;
+        width: 100%;
+        height: 1000px;
+    }
+    #hobbies {
+        display: block;
+        width: 800px;
+    }
+    #hobbies-content .text-col #hobbies p {
+        width: 700px;
+        margin: 0 auto;
+    }
+    #hobbies-content .photo-row {
+        height: 150px;
+        background-position: bottom;
+    }
+    #hobbies-content a:last-of-type {
+        margin-bottom: 60px;
+    }
+    * {
+        transition: all ease 1s;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .activity {
+        width: 100%;
+        height: 300px;
+    }
+    main {
+        height: 1840px;
+    }
+    #activities-content {
+        height: 2400px;
+    }
+    #memory-content {
+        height: 1180px;
+    }
+    #memory-content h4 {
+        margin-bottom: 20px;
+    }
+    #stimulation-memorielle {
+        width: 600px;
+        -webkit-column-count: 1;
+        /* Chrome, Safari, Opera */
+        -moz-column-count: 1;
+        /* Firefox */
+        column-count: 1;
+        width: 70%;
+    }
+    .text-content {
+        width: 100%;
+        height: 1400px;
+        display: flex;
+        justify-content: space-around;
+    }
+    #outings-content {
+        height: 630px;
+    }
+    #outings-and-walks {
+        width: 90%;
+    }
+    #outings-content .text-content {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    #outings-content .photo-intervenants-content {
+        display: block;
+        height: 100px;
+        margin-top: 40px;
+    }
+    #sports-content .text-content {
+        height: 800px;
+    }
+    #sports-gym-yoga {
+        width: 80%;
+        -webkit-column-count: 1;
+        /* Chrome, Safari, Opera */
+        -moz-column-count: 1;
+        /* Firefox */
+        column-count: 1;
+    }
+    #tutoring-content {
+        height: 900px;
+        display: block;
+    }
+    #tutoring-content .text-col {
+        display: block;
+        height: 500px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    #tutoring-content .text-content {
+        height: 700px;
+    }
+    #tutoring {
+        width: 100%;
+    }
+    #beauty-content .text-content {
+        height: 800px;
+    }
+    #hobbies-content {
+        width: 100%;
+        height: 1650px;
+    }
+    #hobbies-content .text-col {
+        width: 90%;
+        margin: 0 auto;
+    }
+    #hobbies-content .text-col .text-content {
+        display: block;
+        width: 100%;
+        height: 1000px;
+    }
+    #hobbies {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+    #hobbies-content .text-col #hobbies p {
+        display: block;
+        width: 80%;
+    }
+}

@@ -1,32 +1,15 @@
 /* Header */
 
 
-header nav>ul>li:first-child>a:after {
-    content: '';
-    width: 100%;
-    height: 3px;
-    position: absolute;
-    left: 0;
-    bottom: 10px;
+header nav>ul>li:first-child>a:after,#header-move ul>li:nth-child(2)>a:after {
     opacity: 0.5;
-    transition: all ease 1s;
-}
-
-#header-move ul>li:nth-child(2)>a:after {
-    content: '';
-    width: 100%;
-    height: 3px;
-    position: absolute;
-    left: 0;
-    bottom: 10px;
-    opacity: 0.5;
-    transition: all ease 1s;
 }
 
 /* swiper */
 
 .swiper-container {
     width: 100%;
+    height:auto;
 }
 
 .swiper-pagination-bullet {
@@ -36,10 +19,10 @@ header nav>ul>li:first-child>a:after {
 
 /* our activitis */
 
-#our-activitis {
+#our-activities {
     width: 100%;
     height: 800px;
-    background: #ff6666;
+    background: #66cccc;
     text-align: center;
 }
 
@@ -49,26 +32,31 @@ header nav>ul>li:first-child>a:after {
     text-align: center;
     font-size: 0;
     overflow: hidden;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-#pink-block img {
-    margin-top: 40px;
-    margin-right: 40px;
-    float: left;
+#pink-block video {
+    width:50%;
 }
-
 #pink-left {
     width: 43%;
     display: inline-block;
     float: left;
     color: white;
-    margin: 40px 40px 0 23px;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #pink-left h3 {
-    font-family: 'Futura-Med';
+    font-family: 'Lato';
     font-size: 30px;
-    padding-bottom: 81px;
+    margin-top: 40px;
 }
 
 #pink-left ul {
@@ -81,10 +69,12 @@ header nav>ul>li:first-child>a:after {
     width: 100%;
     height: 88px;
     margin-bottom: 40px;
-    font-family: 'Lato';
+    font-family: 'Futura-Med';
     align-items: center;
 }
-
+#pink-left ul>li>p{
+    line-height: 25px;
+}
 #pink-left ul li img {
     margin-top: 0;
     margin-right: 22px;
@@ -92,29 +82,30 @@ header nav>ul>li:first-child>a:after {
 }
 
 #pink-button {
-    width: 290px;
-    font-family: 'Lato';
+    width: 200px;
+    height:40px;
+    line-height: 40px;
+    font-family: 'Futura-Med';
     font-size: 20px;
     color: white;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border: white solid 2px;
-    border-radius: 30px;
+    border: white solid 1px;
+    border-radius: 15px;
     transition: all ease 1s;
+    margin-bottom: 40px;
 }
 
 #pink-button:hover {
-    color: #ff6666;;
+    color: #66cccc;
     background: white;
     transition: all ease 1s;
 }
 
-/* how it work */
+/* how it works */
 
-#how-it-work {
+#how-it-works {
     width: 100%;
     height: 800px;
-    background-color: #66cccc;
+    background-color: #ff6666;
     text-align: center;
 }
 
@@ -124,11 +115,12 @@ header nav>ul>li:first-child>a:after {
     text-align: left;
     font-size: 0;
     overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #green-block img {
-    margin-top: 40px;
-    margin-left: 40px;
     width: 480px;
     height: 710px;
     display: inline-block;
@@ -137,69 +129,74 @@ header nav>ul>li:first-child>a:after {
 
 #green-right {
     width: 43%;
+    height: 100%;
     display: inline-block;
     float: left;
     color: white;
-    margin-top: 115px;
-    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #green-right h3 {
-    font-family: 'Futura-Med';
+    font-family: 'Lato';
     font-size: 30px;
-    padding-bottom: 114px;
+    margin-top: 50px;
 }
 
 #green-right p {
-    font-family: 'Lato';
+    
     font-size: 15px;
-    padding-bottom: 29px;
+    line-height: 25px;
+    width:300px;
 }
 
 #green-button {
-    width: 290px;
-    font-family: 'Lato';
+    width: 200px;
+    height:40px;
+    line-height: 40px;
+    font-family: 'Futura-Med';
     color: white;
     font-size: 20px;
-    padding-bottom: 15px;
-    margin-top: 119px;
-    padding-top: 15px;
-    border: white solid 2px;
-    border-radius: 30px;
+    border: white solid 1px;
+    border-radius: 15px;
     text-align: center;
     transition: all ease 1s;
+    margin-bottom: 80px;
 }
 
+
 #green-button:hover {
-    color: #66cccc;
+    color: #ff6666;
     background: white;
     transition: all ease 1s;
 }
 
 /** our profit **/
 
-#our-profit{
+#the-benefits{
     width: 100%;
     height: 500px;
     background-color: white;
 }
 
-#our-profit h3 {
-   font-family: 'Futura-Med';
+#the-benefits h3 {
+   font-family: 'Lato';
    font-size: 30px;
    padding-top: 60px;
    font-weight: bolder;
     text-align: center;
 }
 
-#our-profit div:first-child {
+#the-benefits div:first-child {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-#profits{
+#benefits{
     font-family: 'Futura-Med';
     text-align: center;
     display: flex;
@@ -237,18 +234,18 @@ header nav>ul>li:first-child>a:after {
    line-height: 115px; /* 100 - 10 */;
 }
 
-#profits ul {
+#benefits ul {
     margin-left: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#profits ul:first-child {
+#benefits ul:first-child {
     margin: 0;
 }
 
-#profits ul li {
+#benefits ul li {
     padding-top: 30px;
     width: 182px;
     font-size: 15px;
@@ -271,6 +268,7 @@ header nav>ul>li:first-child>a:after {
    text-align: right;
    font-family: 'Lobster';
    padding-bottom: 20px;
+    color:white;
 }
 
 #swiper2>div p{
@@ -318,17 +316,17 @@ header nav>ul>li:first-child>a:after {
 }
 
 @media screen  and (max-width: 1023px) {
-    /* swiper top */
-    .swiper-container {
-        height: 600px;
-    }
-
+    
+    
     /* our activites */
 
-    #our-activitis {
-        height: auto;
+    #our-activities {
+        height: 1300px;
     }
-
+    #our-activities h3{
+        height: auto;
+        margin-bottom: 50px;
+    }
     #pink-block {
         height: auto;
         display: flex;
@@ -337,11 +335,9 @@ header nav>ul>li:first-child>a:after {
         align-items: center;
     }
 
-    #pink-block img {
-        margin: 0;
-        float: none;
-        height: 400px;
-    }
+    #pink-block video {
+    width:100%;
+}
 
     #pink-left {
         float: none;
@@ -350,7 +346,6 @@ header nav>ul>li:first-child>a:after {
     }
 
     #pink-left ul {
-        margin-left: 40px;
         margin-bottom: 40px;
     }
 
@@ -374,64 +369,36 @@ header nav>ul>li:first-child>a:after {
         height: 75px;
     }
 
-    #pink-button {
-        display: inline;
-        padding: 15px 30px;
-    }
 
-    /* how it work */
-
-    #how-it-work {
-        height: auto;
-    }
-
+    /* how it works */
+ 
+#how-it-works {
+    width: 100%;
+    height: 600px;
+}
     #green-block {
-        height: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        height: 600px;
     }
-
     #green-block img {
-        float: none;
-        height: 50%;
-        width: 50%;
-        margin-top: 80px;
-        padding-left: 80px;
+    width: 330px;
+    height: auto;
+}
+    #green-button{
+        margin-bottom: 30px;
     }
-
-    #green-right {
-        float: none;
-        width: 80%;
-        margin-top: 80px;
-        padding-right: 40px;
-        margin-left: 10px;
-    }
-
-    #green-right p {
-        margin-right: 100px;
-    }
-
-    #green-button {
-        margin-top: 50px;
-        margin-bottom: 20px;
-        margin-right: 80px;
-        margin-left: 0;
-    }
-
     /* our profit */
 
-    #our-profit {
+    #the-benefits {
         height: auto;
         margin-bottom: 40px;
     }
 
-    #profits {
+    #benefits {
         flex-direction: column;
         justify-content: center;
     }
 
-    #profits ul {
+    #benefits ul {
         margin: 0;
         margin-top: 40px;
         display: flex;
@@ -440,7 +407,7 @@ header nav>ul>li:first-child>a:after {
         justify-content: center;
     }
 
-    #profits ul li {
+    #benefits ul li {
         margin-left: 22px;
         width: 50%;
         text-align: left;
@@ -459,55 +426,20 @@ header nav>ul>li:first-child>a:after {
 }
 
 @media screen  and (max-width: 768px) {
-    /* swiper top */
-    .swiper-container {
-        height: 600px;
-    }
-
+   
     /* our activites */
 
-    #our-activitis {
+    #our-activities {
         height: auto;
-    }
-
-    #pink-block {
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #pink-block img {
-        margin: 0;
-        float: none;
-        height: 400px;
-    }
-
-    #pink-left {
-        float: none;
-        width: 100%;
-        margin: 40px 0;
-    }
-
-    #pink-left ul {
-        margin-left: 40px;
-        margin-bottom: 40px;
     }
 
     #pink-left ul li {
         display: flex;
         flex-direction: row;
         width: 100%;
-        margin-bottom: 40px;
         font-family: 'Lato';
         justify-content: center;
     }
-
-    #pink-left ul li p {
-        width: 50%;
-    }
-
     #pink-left ul li img {
         margin-right: 22px;
         text-align: left;
@@ -515,71 +447,45 @@ header nav>ul>li:first-child>a:after {
         height: 75px;
     }
 
-    #pink-button {
-        display: inline;
-        padding: 15px 30px;
-    }
 
-    /* how it work */
+    /* how it works */
 
-    #how-it-work {
-        height: auto;
+    #how-it-works {
+        height: 1120px;
     }
 
     #green-block {
         height: auto;
         display: flex;
         flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-around;
     }
 
     #green-block img {
         float: none;
         height: 50%;
         width: 50%;
-        margin-top: 80px;
-        margin-right: 160px;
+        
     }
 
     #green-right {
-        float: none;
-        width: 70%;
-        margin-top: 40px;
-        padding-right: 0;
-        margin-left: 80px;
+        width: 100%;
+        height:600px;
     }
     
-    #green-right h3 {
-        font-size: 20px;    
-    }
-    
-    #green-right p {
-        font-size: 15px;
-        margin-right: 100px;
-    }
-
-    #green-button {
-        width: 200px;
-        margin-top: 50px;
-        margin-bottom: 20px;
-        margin-right: 80px;
-        margin-left: 0;
-    }
-
     /* our profit */
 
-    #our-profit {
+    #the-benefits {
         height: auto;
         margin-bottom: 40px;
     }
 
-    #profits {
+    #benefits {
         flex-direction: column;
         justify-content: center;
     }
 
-    #profits ul {
+    #benefits ul {
         margin: 0;
         margin-top: 40px;
         display: flex;
@@ -588,7 +494,7 @@ header nav>ul>li:first-child>a:after {
         justify-content: center;
     }
 
-    #profits ul li {
+    #benefits ul li {
         margin-left: 22px;
         width: 50%;
         text-align: left;

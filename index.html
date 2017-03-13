@@ -10,9 +10,6 @@
     <link rel="stylesheet" href="assets/css/swiper.mini.css">
     <link rel="stylesheet" href="assets/css/basic.css">
     <link rel="stylesheet" href="assets/css/home.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/basic.css" media="screen  and (max-width: 1023px)">
-    <link rel="stylesheet" type="text/css" href="assets/css/home.css" media="screen  and (max-width: 1023px)">
-     <link rel="stylesheet" type="text/css" href="assets/css/home.css" media="screen  and (max-width: 768px)">
     <link rel="icon" type="image/png" href="assets/img/favicon32.png">
 </head>
 
@@ -36,20 +33,21 @@
         </div>
     </div>
     <header>
-       <div id="header-icon">
-           <div class="burger"></div>
-           <div class="burger"></div>
-           <div class="burger"></div>
+
+       <div id="burger">
+           <div class="line"></div>
+           <div class="line"></div>
+           <div class="line"></div>
        </div>
-        <h1><img src="assets/img/logo_silver_act.png" alt="Silver Act Logo" ></h1>
-        <h1><img src="assets/img/logo_tablette.png" alt="Silver Act Logo"></h1>
+       
+        <h1><img src="assets/img/logo-silver-act.svg" alt="Silver Act Logo" height="90" ></h1>
         <nav>
             <ul class="center-col">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="assets/html/qui-sommes-nous.html">Qui sommes nous ?</a></li>
                 <li><a href="assets/html/comment-ca-marche.html">Comment ça marche ?</a></li>
-                <li><a href="">Nos Activités</a></li>
-                <li><a href="">Questions fréquentes</a></li>
+                <li><a href="assets/html/nos-activites.html">Nos Activités</a></li>
+                <li><a href="assets/html/questions-frequentes.html">Questions fréquentes</a></li>
                 <li><a href="assets/html/contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -58,30 +56,21 @@
                <li><img src="assets/img/logo_silver_act.png"></li>
                <li><a href="index.html">Home</a></li>
                 <li><a href="assets/html/qui-sommes-nous.html">Qui sommes nous ?</a></li>
-                <li><a href="#how-it-work">Comment ça marche ?</a></li>
-                <li><a href="#our-activitis">Nos Activités</a></li>
-                <li><a href="">Questions Fréquentes</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="assets/html/comment-ca-marche.html">Comment ça marche ?</a></li>
+                <li><a href="assets/html/nos-activites.html">Nos Activités</a></li>
+                <li><a href="assets/html/questions-frequentes.html">Questions Fréquentes</a></li>
+                <li><a href="assets/html/contact.html">Contact</a></li>
            </ul>            
-        </nav>
-        <nav id="mobtab-nav">
-            <ul class="center-col">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="assets/html/qui-sommes-nous.html">Qui sommes nous ?</a></li>
-                <li><a href="">Comment ça marche ?</a></li>
-                <li><a href="">Nos activités</a></li>
-                <li><a href="">Questions fréquentes</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
         </nav>
     </header>
     
     <main>
         <section id="swiper1" class="swiper-container">
             <div class="swiper-wrapper">
-                <img alt="senior" src="assets/img/Senior.jpg" class="swiper-slide">
-                <img alt="Sport" src="assets/img/sport.jpg" class="swiper-slide">
-                <img alt="elder" src="assets/img/elder.jpg" class="swiper-slide"> 
+                <img alt="senior" src="assets/img/slide01.jpg" class="swiper-slide">
+                
+                <img alt="Sport" src="assets/img/slide02.jpg" class="swiper-slide">
+                <img alt="elder" src="assets/img/slide03.jpg" class="swiper-slide"> 
             </div>
             
         <!-- Ajouter Pagination -->
@@ -91,41 +80,45 @@
             <div class="swiper-button-prev swiper-button-white"></div>   
         </section>
         
-        <section id="our-activitis">
+        <section id="our-activities">
             <div id="pink-block" class="center-col">
                 <div id="pink-left">
                     <h3>Nos activités</h3>
                     <ul>
                         <li>
-                            <img src="assets/img/home/round-icon-art.png"><p>Verum ut ut am ra cor re cuptatus dolupiet mi.</p>
+                            <img src="assets/img/home/round-icon-art.png"><p>Exprimez votre créativité à travers plusieurs activités tout en étant avec des professionnels</p>
                         </li>
-                        <li><img src="assets/img/home/round-icon-brain.png"><p>Verum ut ut am ra cor re cuptatus dolupiet mi, aute.</p></li>
-                        <li><img src="assets/img/home/round-icon-heart.png"><p>Ut ut am ra cor re cuptatus dolupiet mi, aute ommodignia.</p></li>
-                        <li><img src="assets/img/home/round-icon-lotus.png"><p>Mverum ut ut am ra cor re cuptatus dolupiet mi, aute ommodignia non re, oditatu recat.</p></li>
+                        <li><img src="assets/img/home/round-icon-brain.png"><p>Continuez à stimuler votre mémoire avec des jeux ludiques</p></li>
+                        <li><img src="assets/img/home/round-icon-heart.png"><p>Convivialité, partage, sympathie</p></li>
+                        <li><img src="assets/img/home/round-icon-lotus.png"><p>Redécouvrez le bien-être / Détendez-vous</p></li>
                     </ul>
                     <a href="assets/html/" id="pink-button">En savoir plus</a>
                 </div>
-                <img src="assets/img/home/illustration_02.png">
+                <video width="100%" height="auto" id="interview" controls poster="/assets/img/video-poster-activites.jpg" onclick="this.play()" >
+                    <source src="/assets/videos/Silver_act_Activites.mp4" type="video/mp4">
+                    <source src="/assets/videos/Silver_act_Activites.ogv" type="video/ogg"> Your browser does not support the video tag.
+                </video>
             </div>
         </section>
         
-        <section id="how-it-work">
+        <section id="how-it-works">
             <div id="green-block" class="center-col">
                 <img src="assets/img/home/illustration_01.png">
                 <div id="green-right">
                     <h3>Comment ça marche ?</h3>
-                    <p>Deatur? Qui ommodio. Senderspero temped ut versperuptat volo dolor aut volora vel in rest qui verum ut ut am ra cor re cuptatus dolupiet mi, aute ommodignia non re, oditatu recat.</p>
-                    <p>natem dolupti stiunt re quam repudit ut quisquo bea nis volut ad minvele stionse quibus quibea consequi voluptaerrum autas et volora volorum, serum rem escient. Sedi te nis sitatur mod ma veni volupici blandae cepero consequi iliquas expliquatur, et, aut fugitas quam nullent.</p>
+                    <p>Silver Act, nous sommes un groupe spécialisé dans le bien être depuis 2017, avec plusieurs apparitions auprès de plusieurs médias tels que France 2,  Europe 1. </p>
+                    <p>Nos équipes d’intervenants sont diplômés et qualifiés. Nous vous proposons une offre sur mesure adaptée et surtout adéquate. Lors du 1er rendez-vous à votre domicile ou chez vos proches, notre conseiller étudie votre demande, vos besoins et vous conseille sur la prestation la plus adequate avec une estimation chiffrée. 
+</p>
                     <a href="assets/html/comment-ca-marche.html" id="green-button">En savoir plus</a>
                 </div>
             </div>
         </section>
         
-        <section id="our-profit">
+        <section id="the-benefits">
             <div class="center-col">
-                <h3>Nos Bénéfices</h3>
+                <h3>Les Bénéfices</h3>
 
-                <div id="profits">
+                <div id="benefits">
                     <ul>
                         <div id="fisrt-data">77%</div>
                         <li><p>77% des seniors ipsum dolor sit amet, consectetur adipiscing elit</p></li>
@@ -149,7 +142,7 @@
                     <ul>
                         <li><h4>Emilie</h4></li>
                         <li><img src="assets/img/home/quote-01.png"> </li>
-                        <li class="align"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p></li>
+                        <li class="align"><p>J'ai trouvé le service très réactif, toujours à l'écoute. Le personnel est très humain , très sérieux, toujours à l'heure</p></li>
                         <li><img src="assets/img/home/quote-02.png"> </li>
                         <li>
                             <div id="stars">
@@ -166,7 +159,7 @@
                     <ul>
                         <li><h4>Sarah</h4></li>
                         <li><img src="assets/img/home/quote-01.png"> </li>
-                        <li class="align"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p></li>
+                        <li class="align"><p>Les prestations sont parfaites. A noter quelques changement de dernière minutes. Je recommande !</p></li>
                         <li><img src="assets/img/home/quote-02.png"> </li>
                         <li>
                             <div id="second-stars">
@@ -183,7 +176,7 @@
                     <ul>
                         <li><h4>Jean</h4></li>
                         <li><img src="assets/img/home/quote-01.png"> </li>
-                        <li class="align"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p></li>
+                        <li class="align"><p>Bon suivi des clients par l'agence ! Je suis satisfaite des services proposés !</p></li>
                         <li><img src="assets/img/home/quote-02.png"> </li>
                         <li>
                             <div id="third-stars">
@@ -309,32 +302,32 @@
     <footer>
        <div class="center-col footer-content">
         <div id="logo-social">
-            <img src="assets/img/logo_silver_act_footer.png" alt="">
+            <img src="assets/img/logo-silver-act-white.svg" alt="">
             <nav id="social">
                 <ul>
                     <li>
-                        <a href=""></a>
+                        <a href="https://twitter.com/silveract5" target="_blank"></a>
                     </li>
                     <li>
-                        <a href=""></a>
+                        <a href="https://fr-fr.facebook.com/Silver-Act-1546987715608304/" target="_blank"></a>
                     </li>
                     <li>
-                        <a href=""></a>
+                        <a href="https://plus.google.com/107265060556472087727" target="_blank"></a>
                     </li>
                 </ul>
             </nav>
         </div>
-        <div id="footer-txt"><p>Maute ommodignia non re, oditatu recatquisquo bea nis volut ad minvele stioOluptas aut et, to et aspel experum aut praesequo blabor ma doluptatum, que poribus voluptae num rerciati officil et debis mi, que rerumqui ne nim asinus niam alibusamet volene nonsece ptius, cus, cor repel .</p></div>
+        <div id="footer-txt"><p>Silver Act est une plateforme qui permet de mettre en relation des retraités avec des intervenants passionné désireux de leurs transmettre leurs expériences (Yoga, Jeu de mémoire, ...) si vous souhaitez découvrir cela vous êtes au bon endroit.</p></div>
         <nav id="secondarynav">
             <ul>
                 <li>
-                    <a href="assets/html/contact.html">Contact</a>
+                    <a href="assets/html/contact.html" >Contact</a>
                 </li>
                 <li>
-                    <a href="assets/html/questions-fr%C3%A9quentes.html">Questions Fréquentes</a>
+                    <a href="assets/html/questions-frequentes.html">Questions Fréquentes</a>
                 </li>
                 <li>
-                    <a href="">Mentions Légales</a>
+                    <a href="assets/html/mentions-legales.html">Mentions Légales</a>
                 </li>
             </ul>
         </nav>

@@ -1,0 +1,256 @@
+header nav>ul>li:nth-child(5)>a:after,#header-move>ul>li:nth-child(6)>a:after {
+    opacity: 0.5;
+}
+#header-move>ul>li:nth-child(5)>a:after,.responsivetab nav>ul>li:nth-child(1)>a:after {
+   opacity: 0;
+}
+.responsivetab nav>ul>li:nth-child(5)>a:after{
+    opacity: 1;
+}
+
+
+h2 {
+    background-color: #4ecdc4;
+    margin-bottom: 40px;
+}
+
+#question-tags>p:first-child {
+    width: 764px;
+    margin: 0 auto 40px;
+}
+
+#question-tags-group {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.question-tag {
+    height: 40px;
+    width: 130px;
+    float: left;
+    margin-right: 55px;
+    margin-bottom: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 15px;
+    box-sizing: border-box;
+    border: 1px solid #f64747;;
+    cursor: pointer;
+    color:#f64747;  
+    transition:all ease 1s;
+}
+
+.question-tag:nth-child(3) {
+    margin-right: 0;
+}
+
+.question-tag:nth-child(4) {
+    margin-left: 55px;
+    
+}
+
+#questions {
+    clear: both;  
+}
+
+.question-answer {
+    height: 50px;
+    overflow: hidden;
+    transition: all ease 1s;
+    cursor: pointer;
+    transition:all ease 1;
+}
+
+.question {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    transition:all ease 1;
+}
+
+.q-triangle {
+    width: 30px;
+    height: 50px;
+    margin:0 20px;
+    float: left;
+    background: url(/assets/img/questions_frequentes/arrow-question.svg) center no-repeat;
+    line-height: 50px;
+    transition: all ease 1s;
+}
+
+
+.question p {
+    color: white;
+    font-family: futura-med;
+}
+
+.answer {
+    height:auto;
+    margin-bottom:10px;
+    transition:all ease 1;
+}
+
+.rotated-q {
+    height:100px;
+    transition: all ease 1;
+}
+
+
+.rotated-q .q-triangle {
+    -ms-transform: rotate(90deg);
+    /* IE 9 */
+    -webkit-transform: rotate(90deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+    transition: all ease 1s;
+}
+
+
+/** QUESTION COLORS **/
+
+.q-pink{
+    background-color:#db0a5b;
+}
+.q-red{
+    background-color:#f64747;
+}
+.q-yellow{
+    background-color:#f7ca18;
+}
+.q-dgreen{
+    background-color:#4ecdc4;
+}
+.q-lgreen{
+    background-color:#a2ded0;
+}
+.q-grey{
+    background-color:#7c7b7b;
+}
+
+
+/** ANSWERS **/
+.q-pink+.answer p{
+    width:90%;
+    margin: 15px 0 0 70px ;
+}
+
+.q-red+.answer p{
+    width:90%;
+    margin: 10px 0 0 70px ;
+}
+
+.q-yellow+.answer p{
+    width:90%;
+    margin: 10px 0 0 70px ;
+}
+.q-dgreen+.answer p{
+    width:90%;
+    margin: 15px 0 0 70px ;
+}
+.q-lgreen+.answer p{
+    width:90%;
+    margin: 10px 0 0 70px ;
+}
+.q-grey+.answer p{
+    width:90%;
+    margin: 10px 0 0 70px ;
+}
+
+
+
+/** CONTACT **/
+
+
+
+#question-contact{
+    margin:40px auto;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+}
+
+#question-contact p:nth-child(2),#question-contact p:nth-child(4){
+    width:300px;
+    height:40px;
+    margin:0 auto;
+    line-height: 40px;
+    border-radius: 15px;
+    color:white;
+    font-family: Futura-bold;
+    letter-spacing: 3px;
+}
+#question-contact p:nth-child(2){
+    background-color:#4ecdc4;
+}
+#question-contact p:nth-child(4){
+    background-color:#f64747;
+}
+
+#question-contact a{
+    width: 200px;
+    height:40px;
+    line-height: 40px;
+    font-family: 'Futura-Med';
+    font-size: 20px;
+    color: #7c7b7b;
+    border: #7c7b7b solid 1px;
+    border-radius: 15px;
+    transition: all ease 1s;
+    margin: 20px 0 40px;
+    text-align: center;    
+    transition:all ease 1s;
+    margin:0 auto;
+}
+#question-contact a:hover{
+    background-color:#f7ca18;
+    color:white;
+    border: #f7ca18 1px solid;
+    transition:all ease 1s;
+}   
+  
+/** CLICK TAG - TEST FOR WHEN THERE'S MORE QUESTIONS **/
+.question-tag{cursor:pointer;}
+
+.q-impots-clicked,.q-securite-clicked{
+    background-color:#f64747;
+    color:white;
+    transition:all ease 1s;
+}
+
+.q-opacity{
+    opacity:0.2;
+}
+
+
+@media screen  and (max-width: 1023px) {
+    
+    
+}
+@media screen  and (max-width: 767px) {
+    
+#question-tags>p:first-child {
+    width: 90%;
+    margin: 0 auto 40px;
+}
+    .answer {
+        width:100%;
+        transition:all ease 1;
+        
+}
+    .question+.answer p{
+        margin:10px auto;
+        transition:all ease 1;
+    }
+    .q-pink,.q-grey{
+        height:50px;
+        line-height: 25px;
+        transition:all ease 1;
+    }
+    .rotated-q{
+        height:145px;
+    }
+    #question-contact{
+        width:90%;
+    }
+    
+}

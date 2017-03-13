@@ -1,51 +1,41 @@
-var titi;
+var time;
+var width = window.innerWidth;
+console.log(width);
+var height = window.innerHeight
+|| document.documentElement.clientHeight
+|| document.body.clientHeight;
 
-$('#header-icon').click(function () {
-    if ($('#mobtab-nav').css('display') == 'none'){
-        $('header').css('background-color', '#7b7b7a');
-        $('.burger').css('background-color', 'white');
-        $('#header-icon div').css({
-            top : '50%',
-            display : 'none',
-            transform : 'translateY(-50%)'
-        });
-        $('#header-icon div:first-child').css({
-            display : 'block',
-            top : '50%',
-            transform : 'translateY(-50%)',
-            transform : 'rotate(45deg)'
-        });
-        $('#header-icon div:last-child').css({
-            display : 'block',
-            top : '50%',
-            transform : 'translateY(-50%)',
-            transform : 'rotate(-45deg)'
-        });
-        $('header>h1~h1>img').attr("src", 'assets/img/logo-tablette-white.png');
-        $('#mobtab-nav').css('display', 'block');
-        $('body').css('overflow', 'hidden');
-    } else {
-        $('header').css('background-color', 'white'); 
-        $('.burger').css('background-color', '#7b7b7a');
-        $('#header-icon div').css({
-            top : '50%',
-            display : 'block',
-            transform : 'translateY(-50%)'
-        });
-        $('#header-icon div:first-child').css({
-            display : 'block',
-            top : '0',
-        });
-        $('#header-icon div:last-child').css({
-            display : 'block',
-            top : '100%',
-            transform : 'translateY(-50%)',
-        });
-        $('header h1 img').attr("src", 'assets/img/logo_silver_act.png');
-        $('#mobtab-nav').css('display', 'none');
-        $('body').css('overflow', 'inherit');
-    }
+
+
+
+    $('#burger').click(function(){
+        $('#burger').toggleClass('clickedburger');
+         $('header').toggleClass('responsivetab');
+        //ERASE CONSOLE LOGS   
+        if($('#burger').hasClass('clickedburger')){
+           $('header>h1>img').attr("src", '/assets/img/logo-silver-act-white.svg');
+            $('header').css({'height': height,'transition':'all ease 1s'});
+             $('body').css({'overflow': 'hidden','transition':'all ease 1s'});
+        }else{
+            $('header>h1>img').attr("src", '/assets/img/logo-silver-act.svg');
+           $('header').css({'height':'100px','transition':'all ease 1s'});
+             $('body').css({'overflow': 'scroll','transition':'all ease 1s'});
+            
+        }
+            
+    });
+    $('#sticky input[type=submit]').click(function(e) {
+    e.preventDefault();
+    $('#sticky').css({
+          'opacity': '0',
+        'position': 'absolute',
+        'right':'-830px',
+        'transition': 'all ease 1s'
+    });
+        
 });
+    
+
 
 $('#sticky input[type=tel]').click(function() {
     $('#sticky').css({
@@ -63,7 +53,7 @@ $('#sticky input[type=submit]').click(function(e) {
     $('#send').css({
         'display': 'flex'
     });
-    titi = setTimeout(wait_third_sec, 3000);
+    time = setTimeout(wait_third_sec, 1500);
 });
 
 function wait_third_sec() {
@@ -71,8 +61,9 @@ function wait_third_sec() {
         'right': '-830px',
         'transition': 'all ease 1s'
     });
-    clearTimeout(titi);
+    clearTimeout(time);
 }
+
 
 window.onscroll = function () {
     $('body').bind('DOMMouseScroll', function(e) {

@@ -5,7 +5,9 @@ var swiper1 = new Swiper('#swiper1', {
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
     Spacebetween: 10,
-    effet: 'fade'
+    effet: 'fade',
+    autoHeight:true,
+    autoplay : 5000
 });
 
 var swiper2 = new Swiper('#swiper2', {

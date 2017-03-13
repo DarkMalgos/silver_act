@@ -1,12 +1,304 @@
 /* Header */
 
-header nav>ul>li:nth-child(3)>a:after {
-    content: '';
-    width: 100%;
-    height: 3px;
-    position: absolute;
-    left: 0;
-    bottom: 10px;
+header nav>ul>li:nth-child(3)>a:after,
+#header-move>ul>li:nth-child(4)>a:after {
     opacity: 0.5;
+}
+
+#header-move>ul>li:nth-child(3)>a:after,
+.responsivetab nav>ul>li:nth-child(1)>a:after {
+    opacity: 0;
+}
+
+.responsivetab nav>ul>li:nth-child(3)>a:after {
+    opacity: 1;
+}
+
+#part-green {
+    width: 100%;
+    background-color: #A2DED0;
+}
+
+#part-green h2 {
+    background-color: #F64747;
+}
+
+#part-green>div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: "futura-med";
+    font-size: 15px;
+    color: white;
+    padding: 40px 0;
+    width: 764px;
+}
+
+#part-green>div h3 {
+    font-family: "Lobster";
+    font-size: 40px;
+}
+
+#part-green>div>h3~p {
+    margin-top: 40px;
+}
+
+#map-howitworks {
+    width: 220px;
+    height: 140px;
+    background: url(/assets/img/howitworks/map.png) no-repeat;
+    background-size: contain;
+}
+
+#part-green>div>div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#part-green>div>div p {
+    padding-left: 35px;
+    margin: 0;
+}
+
+#our-offert {
+    width: 100%;
+    background-color: white;
+}
+
+#our-offert>div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: "futura-med";
+    font-size: 20px;
+    color: #7C7C7B;
+}
+
+#our-offert>div h3 {
+    font-family: "lobster";
+    font-size: 40px;
+    color: black;
+    margin-top: 80px;
+}
+
+#our-offert .center-col {
+    width: 764px;
+}
+
+#our-offert>div>div>h3~p {
+    margin-top: 50px;
+    margin-bottom: 32px;
+}
+
+#red-offert {
+    margin-top: 35px;
+    width: 100%;
+    background-color: #F64747;
+}
+
+#yellow-offert {
+    width: 100%;
+    background-color: #F7CA18;
+}
+
+#green-offert {
+    width: 100%;
+    background-color: #4ECDC4;
+}
+
+#our-offert .offert {
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+}
+
+#our-offert .offert p {
+    line-height: 20px;
+}
+
+#our-offert .offert p {
+    width: 550px;
+    margin-left: 40px;
+    font-size: 15px;
+}
+
+#our-offert .offert h4 {
+    font-size: 57px;
+    width: 100px;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 50px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    font-family: lato-light;
+}
+
+#contact {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+#contact>.center-col {
+    width: 764px;
+    height: auto;
+}
+
+#contact>div h3 {
+    font-family: "lobster";
+    font-size: 40px;
+}
+
+#contact>div>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.space {
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 450px;
+}
+
+.space.red {
+    background-color: #4ECDC4;
+    width: 300px;
+    border-radius: 12px;
+    font-size: 22px;
+    padding: 9px 0;
+    color: white;
+}
+
+.space.blue {
+    background-color: #F64747;
+    width: 300px;
+    border-radius: 12px;
+    font-size: 22px;
+    padding: 9px 0;
+    color: white;
+}
+
+.space.white {
+    background-color: white;
+    width: 300px;
+    border-radius: 12px;
+    font-size: 22px;
+    padding: 9px 0;
+    color: #F7CA18;
+    border: solid 1px #F7CA18;
+    margin-bottom: 80px;
+}
+
+#contact a {
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-family: 'Futura-Med';
+    font-size: 20px;
+    color: #7c7b7b;
+    border: #7c7b7b solid 1px;
+    border-radius: 15px;
     transition: all ease 1s;
+    margin: 20px 0 40px;
+    text-align: center;
+    transition: all ease 1s;
+}
+
+#contact a:hover {
+    background-color: #f7ca18;
+    color: white;
+    border: #f7ca18 1px solid;
+    transition: all ease 1s;
+}
+
+@media screen and (max-width: 767px) {
+    #part-green>div.center-col {
+        display: block;
+        padding: 0;
+        width: 100%;
+        padding: 5%;
+    }
+    #part-green {
+        height: auto;
+        padding: 0;
+    }
+    #part-green p {
+        margin: 0;
+        padding: 0;
+        width: 90%;
+    }
+    #part-green>div>div {
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+        margin-top: 40px;
+    }
+    #part-green>div>div p {
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+    }
+    #part-green>div>div p {
+        margin: 0 auto;
+        display: block;
+    }
+    #part-green>div>div p {
+        width: 100%;
+    }
+    #map-howitworks {
+        width: 200px;
+        height: 140px;
+        background: url(/assets/img/howitworks/map.png) no-repeat center;
+        background-size: contain;
+        display: block;
+        margin: 0 auto;
+    }
+    #our-offert .center-col {
+        padding: 0 5%;
+        width: 100%;
+    }
+    #our-offert .offert {
+        height: 200px;
+        width: 100%;
+        justify-content: center;
+        justify-content: space-around;
+    }
+    #our-offert .offert p {
+        width: 70%;
+        margin: 0 auto;
+        float: right;
+        padding-right: 10%;
+        line-height: 20px;
+    }
+    #our-offert .offert h4 {
+        width: 70px;
+        height: 70px;
+        border-radius: 36px;
+        margin: 0 auto;
+        float: right;
+        line-height: 70px;
+        font-size: 30px;
+        margin-right: 5%;
+    }
+    #contact>.center-col {
+        width: 100%;
+        height: auto;
+    }
+    .blue+.space {
+        width: 100%;
+        padding: 5% 5%;
+    }
 }

@@ -4,18 +4,23 @@
     display: none;
 }
 
+
 /* Header */
 
-header nav>ul>li:last-child>a:after {
-    content: '';
-    width: 100%;
-    height: 3px;
-    position: absolute;
-    left: 0;
-    bottom: 10px;
+header nav>ul>li:last-child>a:after,
+#header-move>ul>li:last-child>a:after {
     opacity: 0.5;
-    transition: all ease 1s;
 }
+
+#header-move>ul>li:nth-child(4)>a:after,
+.responsivetab nav>ul>li:nth-child(1)>a:after {
+    opacity: 0;
+}
+
+.responsivetab nav>ul>li:last-child>a:after {
+    opacity: 1;
+}
+
 
 /* block info */
 
@@ -71,7 +76,9 @@ header nav>ul>li:last-child>a:after {
     margin-top: 70px;
 }
 
+
 /* formulaire */
+
 #user-info {
     display: none;
     position: relative
@@ -122,7 +129,6 @@ header nav>ul>li:last-child>a:after {
     align-items: center;
     margin-bottom: 87px;
 }
-
 
 #user-info form div:first-child {
     display: flex;
@@ -221,7 +227,6 @@ label span {
     border-color: #dad7d7;
 }
 
-
 #row-img {
     width: 50px;
     height: 50px;
@@ -233,7 +238,7 @@ label span {
     transition: all ease 1s;
 }
 
-#row-img:hover{
+#row-img:hover {
     transform: rotate(360deg);
     transition: all ease 1s;
 }
@@ -244,7 +249,6 @@ label span {
 }
 
 #select-subject ul li {
-    
     padding: 15px 298px 15px 250px;
     font-family: 'Futura-Med';
     font-size: 18px;
@@ -273,7 +277,7 @@ label span {
 
 #select-subject ul li:last-child {
     color: white;
-    background-color: #f64747; 
+    background-color: #f64747;
 }
 
 #select-subject ul li p {
@@ -294,7 +298,6 @@ label span {
 #message-zone label {
     margin-top: 28px;
     margin-left: 130px;
-    
 }
 
 #message-zone textarea {
@@ -342,10 +345,11 @@ label span {
 .valid-form p:last-child:hover {
     background-color: #f7ca18;
     transition: all ease 1s;
-    
 }
 
+
 /* demande de documentation */
+
 #doc {
     width: 100%;
     background-color: #4ecdc4;
@@ -383,7 +387,7 @@ label span {
     text-align: center;
 }
 
-#second-form form>div{
+#second-form form>div {
     margin-top: 72px;
     display: flex;
     justify-content: flex-start;
@@ -443,5 +447,65 @@ label span {
     font-size: 20px;
 }
 
-
-
+@media screen and (max-width: 1023px) {
+    .center-col {
+        width: 100%;
+    }
+    .form-left {
+        display: block;
+        margin: 0;
+        padding: 0;
+        width: 230px;
+        height: 160px;
+    }
+    .form-right {
+        display: block;
+        margin: 0;
+        padding: 0;
+        width: 230px;
+        height: 160px;
+    }
+    .parent-forms {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #second-form form>div~div {
+        display: block;
+        margin: 0 auto;
+        width: 230px;
+        height: 90px;
+    }
+    #second-form {
+        height: 1050px;
+    }
+    #second-form form>div~div~div {
+        display: block;
+        height: 60px;
+    }
+    #second-form form>div~div~div div {
+        display: block;
+        height: 90px;
+    }
+    #second-form form>div~div~div>div {
+        padding-right: 0;
+    }
+    #second-form form>div~div~div~div {
+        display: block;
+        margin-top: 120px;
+    }
+    .valid-form p+p {
+        padding: 0;
+        height: 40px;
+        line-height: 40px;
+        margin-top: 40px;
+        border-radius: 15px;
+        transition: all ease 1s;
+        width: 200px;
+        text-align: center;
+    }
+}
