@@ -46,7 +46,7 @@ header nav>ul>li:nth-child(3)>a:after,
 #map-howitworks {
     width: 220px;
     height: 140px;
-    background: url(//img/howitworks/map.png) no-repeat;
+    background: url(/img/howitworks/map.png) no-repeat;
     background-size: contain;
 }
 
