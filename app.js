@@ -6,6 +6,7 @@ app.use('/js', express.static('assets/js'));
 app.use('/css', express.static('assets/css'));
 app.use('/img', express.static('assets/img'));
 app.use('/fonts', express.static('assets/fonts'));
+app.use('/videos', express.static('assets/videos'));
 app.use('/', express.static('assets/html'));
 
 app.get('/test', function(req, res){
