@@ -73,7 +73,7 @@ h2 {
     height: 50px;
     margin:0 20px;
     float: left;
-    background: url(/assets/img/questions_frequentes/arrow-question.svg) center no-repeat;
+    background: url(//img/questions_frequentes/arrow-question.svg) center no-repeat;
     line-height: 50px;
     transition: all ease 1s;
 }
