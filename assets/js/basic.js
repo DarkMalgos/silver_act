@@ -13,11 +13,11 @@ var height = window.innerHeight
          $('header').toggleClass('responsivetab');
         //ERASE CONSOLE LOGS   
         if($('#burger').hasClass('clickedburger')){
-           $('header>h1>img').attr("src", '//img/logo-silver-act-white.svg');
+           $('header>h1>img').attr("src", '/img/logo-silver-act-white.svg');
             $('header').css({'height': height,'transition':'all ease 1s'});
              $('body').css({'overflow': 'hidden','transition':'all ease 1s'});
         }else{
-            $('header>h1>img').attr("src", '//img/logo-silver-act.svg');
+            $('header>h1>img').attr("src", '/img/logo-silver-act.svg');
            $('header').css({'height':'100px','transition':'all ease 1s'});
              $('body').css({'overflow': 'scroll','transition':'all ease 1s'});
             
